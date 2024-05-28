@@ -21,7 +21,7 @@ const UsersCard = ({ name, email, _id, setsbar, idx, data }) => {
     console.log(formdata);
     console.log(token);
     axios
-      .post("http://localhost:5000/api/chat/", formdata, {
+      .post("https://blabber-app.onrender.com/api/chat/", formdata, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

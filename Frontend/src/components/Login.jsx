@@ -21,7 +21,7 @@ const Login = ({ Setloginstate }) => {
   const handleLogin = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/users/login",
+        "https://blabber-app.onrender.com/api/users/login",
         formData
       );
       localStorage.setItem("userInfo", JSON.stringify(await response.data));

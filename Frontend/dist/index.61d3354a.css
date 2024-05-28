@@ -549,8 +549,8 @@ img, video {
   min-width: 15%;
 }
 
-.max-w-7xl {
-  max-width: 80rem;
+.max-w-5xl {
+  max-width: 64rem;
 }
 
 .max-w-\[70\%\] {
@@ -1349,8 +1349,8 @@ img, video {
     column-gap: .5rem;
   }
 
-  .md\:gap-y-8 {
-    row-gap: 2rem;
+  .md\:gap-y-4 {
+    row-gap: 1rem;
   }
 
   .md\:p-0 {

@@ -33,7 +33,7 @@ const Header = () => {
     const token = userinfo.token;
 
     axios
-      .get(`http://localhost:5000/api/users/?search=${suser}`, {
+      .get(`https://blabber-app.onrender.com/api/users/?search=${suser}`, {
         headers: {
           Authorization: `Bearer ${token}`,
         },

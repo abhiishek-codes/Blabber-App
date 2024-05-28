@@ -21,7 +21,7 @@ const AllChats = () => {
   const token = userinfo?.token;
 
   useEffect(() => {
-    const url = "http://localhost:5000/api/chat/";
+    const url = "https://blabber-app.onrender.com/api/chat/";
     axios
       .get(url, {
         headers: {
