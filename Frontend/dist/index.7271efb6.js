@@ -2967,24 +2967,26 @@ var _loginSignupDefault = parcelHelpers.interopDefault(_loginSignup);
 var _userContext = require("./utils/userContext");
 var _chatPage = require("./pages/ChatPage");
 var _chatPageDefault = parcelHelpers.interopDefault(_chatPage);
+var _errorJsx = require("./components/Chat/Error.jsx");
+var _errorJsxDefault = parcelHelpers.interopDefault(_errorJsx);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContext.UserProvider), {
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 14,
+                    lineNumber: 13,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 15,
+                    lineNumber: 14,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/App.js",
-            lineNumber: 13,
+            lineNumber: 12,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
@@ -2994,13 +2996,13 @@ const Chatpage = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContext.UserProvider), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chatPageDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 24,
+            lineNumber: 20,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 23,
-        columnNumber: 5
+        lineNumber: 19,
+        columnNumber: 10
     }, undefined);
 };
 _c1 = Chatpage;
@@ -3009,32 +3011,37 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 32,
-            columnNumber: 14
+            lineNumber: 25,
+            columnNumber: 12
+        }, undefined),
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsxDefault.default), {}, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 26,
+            columnNumber: 17
         }, undefined),
         children: [
             {
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 36,
-                    columnNumber: 18
+                    lineNumber: 29,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/signup",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginSignupDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 40,
-                    columnNumber: 18
+                    lineNumber: 32,
+                    columnNumber: 14
                 }, undefined)
             },
             {
                 path: "/login",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginSignupDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 44,
-                    columnNumber: 18
+                    lineNumber: 35,
+                    columnNumber: 14
                 }, undefined)
             }
         ]
@@ -3043,8 +3050,13 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/chats",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Chatpage, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 50,
-            columnNumber: 14
+            lineNumber: 39,
+            columnNumber: 12
+        }, undefined),
+        errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsxDefault.default), {}, void 0, false, {
+            fileName: "src/App.js",
+            lineNumber: 40,
+            columnNumber: 17
         }, undefined)
     }
 ]);
@@ -3053,7 +3065,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: router
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 55,
+    lineNumber: 43,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
@@ -3065,7 +3077,7 @@ $RefreshReg$(_c1, "Chatpage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/Navbar":"4U1ks","./pages/Home":"aufND","./pages/LoginSignup":"2ZFKU","./utils/userContext":"eBA1b","./pages/ChatPage":"kHiO9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom/client":"lOjBx","react-router-dom":"9xmpe","./components/Navbar":"4U1ks","./pages/Home":"aufND","./pages/LoginSignup":"2ZFKU","./utils/userContext":"eBA1b","./pages/ChatPage":"kHiO9","./components/Chat/Error.jsx":"b6oIK","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -34043,176 +34055,69 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _navLinks = require("./NavLinks");
-var _navLinksDefault = parcelHelpers.interopDefault(_navLinks);
 var _reactRouterDom = require("react-router-dom");
-var _mobileMp4 = require("url:../assets/Mobile.mp4");
-var _mobileMp4Default = parcelHelpers.interopDefault(_mobileMp4);
-var _hamburgerPng = require("url:../assets/Hamburger.png");
-var _hamburgerPngDefault = parcelHelpers.interopDefault(_hamburgerPng);
+var _blabberPng = require("url:../assets/blabber.png");
+var _blabberPngDefault = parcelHelpers.interopDefault(_blabberPng);
+var _userContext = require("../utils/userContext");
 var _s = $RefreshSig$();
 const Navbar = ()=>{
     _s();
-    const [toggle, setToggle] = (0, _react.useState)(false);
-    const togglemenu = ()=>{
-        setToggle(!toggle);
-    };
-    const handleResize = ()=>{
-        if (window.innerWidth >= 767) setToggle(false);
-    };
+    const { remainingHeight, setRemainingHeight } = (0, _react.useContext)((0, _userContext.userContext));
     (0, _react.useEffect)(()=>{
-        window.addEventListener("resize", handleResize);
-    });
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("nav", {
-        className: "w-screen h-auto",
+        const elementHeight = document.getElementById("myElement").offsetHeight;
+        const newRemainingHeight = window.innerHeight - elementHeight;
+        setRemainingHeight(newRemainingHeight);
+    }, []);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        id: "myElement",
+        className: "h-auto bg-bgcolor text-white font-['Mona']",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "w-[90%] font-['Basis'] mx-auto pt-2",
+            className: "flex justify-between items-center w-[80%] mx-auto py-8",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex  items-center justify-between",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex-shrink-0",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                to: "/",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
-                                    loop: true,
-                                    autoPlay: true,
-                                    muted: true,
-                                    className: "h-[100px] scale-110",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
-                                        src: (0, _mobileMp4Default.default),
-                                        type: "video/mp4"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Navbar.jsx",
-                                        lineNumber: 32,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/components/Navbar.jsx",
-                                    lineNumber: 31,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Navbar.jsx",
-                                lineNumber: 30,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Navbar.jsx",
-                            lineNumber: 29,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: " flex-grow text-center hidden md:flex justify-center items-center",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                                className: "flex gap-8",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navLinksDefault.default), {}, void 0, false, {
-                                    fileName: "src/components/Navbar.jsx",
-                                    lineNumber: 41,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Navbar.jsx",
-                                lineNumber: 40,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Navbar.jsx",
-                            lineNumber: 39,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "text-center hidden md:block",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                className: " bg-green-300 py-3 px-8 rounded-md hover:scale-110 transition-all hover:text-white inline-block",
-                                to: "/signup",
-                                children: "Signup"
-                            }, void 0, false, {
-                                fileName: "src/components/Navbar.jsx",
-                                lineNumber: 47,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Navbar.jsx",
-                            lineNumber: 46,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "md:hidden",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "border-none ",
-                                onClick: togglemenu,
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: (0, _hamburgerPngDefault.default),
-                                    alt: "Hamburger",
-                                    className: "transform scale-150"
-                                }, void 0, false, {
-                                    fileName: "src/components/Navbar.jsx",
-                                    lineNumber: 60,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/components/Navbar.jsx",
-                                lineNumber: 59,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/components/Navbar.jsx",
-                            lineNumber: 58,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/components/Navbar.jsx",
-                    lineNumber: 27,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: ` shadow-lg pb-2 rounded-sm  ${toggle ? "block" : "hidden"} animate-[slideIn_1s] `,
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        className: "flex flex-col items-center justify-center gap-y-3  mx-auto",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                className: " bg-green-300 py-2 px-6 rounded-md hover:scale-105 transition-all hover:text-white  hidden md:inline-block",
-                                to: "/login",
-                                children: "Login"
-                            }, void 0, false, {
-                                fileName: "src/components/Navbar.jsx",
-                                lineNumber: 75,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navLinksDefault.default), {
-                                toggle: toggle
-                            }, void 0, false, {
-                                fileName: "src/components/Navbar.jsx",
-                                lineNumber: 81,
-                                columnNumber: 13
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: (0, _blabberPngDefault.default),
+                        alt: "Blabber The Chat App",
+                        className: "w-36 h-22 scale-110 transform-cpu duration-300 active:scale-75"
+                    }, void 0, false, {
                         fileName: "src/components/Navbar.jsx",
-                        lineNumber: 74,
+                        lineNumber: 19,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Navbar.jsx",
-                    lineNumber: 69,
+                    lineNumber: 18,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/login",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "bg-bgbutton px-7 py-2 rounded-sm transform-cpu active:scale-75 duration-300 tracking-wide text-black hover:bg-white hover:text-black",
+                        children: "Login"
+                    }, void 0, false, {
+                        fileName: "src/components/Navbar.jsx",
+                        lineNumber: 22,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/components/Navbar.jsx",
+                    lineNumber: 21,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Navbar.jsx",
-            lineNumber: 26,
+            lineNumber: 17,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Navbar.jsx",
-        lineNumber: 25,
-        columnNumber: 5
+        lineNumber: 16,
+        columnNumber: 10
     }, undefined);
 };
-_s(Navbar, "E5z+7KxU27TYd2kLomdFOtK8mpg=");
+_s(Navbar, "pvWPEvGf3zqDH9khDU9+OOKqxzk=");
 _c = Navbar;
 exports.default = Navbar;
 var _c;
@@ -34223,50 +34128,122 @@ $RefreshReg$(_c, "Navbar");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./NavLinks":"9Cu91","react-router-dom":"9xmpe","url:../assets/Mobile.mp4":"ajUkj","url:../assets/Hamburger.png":"gHyON","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9Cu91":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$9011 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","url:../assets/blabber.png":"85NmC","../utils/userContext":"eBA1b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"85NmC":[function(require,module,exports) {
+module.exports = require("19ed23f86aa6d81a").getBundleURL("aXMci") + "blabber.84393e5f.png" + "?" + Date.now();
+
+},{"19ed23f86aa6d81a":"lgJ39"}],"lgJ39":[function(require,module,exports) {
+"use strict";
+var bundleURL = {};
+function getBundleURLCached(id) {
+    var value = bundleURL[id];
+    if (!value) {
+        value = getBundleURL();
+        bundleURL[id] = value;
+    }
+    return value;
+}
+function getBundleURL() {
+    try {
+        throw new Error();
+    } catch (err) {
+        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
+        if (matches) // The first two stack frames will be this function and getBundleURLCached.
+        // Use the 3rd one, which will be a runtime in the original bundle.
+        return getBaseURL(matches[2]);
+    }
+    return "/";
+}
+function getBaseURL(url) {
+    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
+}
+// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
+function getOrigin(url) {
+    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
+    if (!matches) throw new Error("Origin not found");
+    return matches[0];
+}
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+exports.getOrigin = getOrigin;
+
+},{}],"eBA1b":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$268f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$9011.prelude(module);
+$parcel$ReactRefreshHelpers$268f.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "userContext", ()=>userContext);
+parcelHelpers.export(exports, "UserProvider", ()=>UserProvider);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-const Navlink = ({ toggle })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
-        children: [
-            "Features",
-            "AboutUs",
-            "ContactUs"
-        ].map((val, index)=>{
-            return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                    className: `${toggle ? "hover:underline inline-block hover:scale-105 transition-all " : "hover:bg-green-300 px-4 py-2 inline-block hover:scale-105 transition-all rounded-lg"}`,
-                    to: "/" + val,
-                    children: val
-                }, index, false, {
-                    fileName: "src/components/NavLinks.jsx",
-                    lineNumber: 10,
-                    columnNumber: 13
-                }, undefined)
-            }, void 0, false, {
-                fileName: "src/components/NavLinks.jsx",
-                lineNumber: 9,
-                columnNumber: 11
-            }, undefined);
-        })
-    }, void 0, false);
+var _s = $RefreshSig$();
+const userContext = /*#__PURE__*/ (0, _react.createContext)();
+const UserProvider = ({ children })=>{
+    _s();
+    const [user, setUser] = (0, _react.useState)();
+    const [allChats, setAllchats] = (0, _react.useState)([]);
+    const [searchuserId, setsearchuserId] = (0, _react.useState)(null);
+    const [activeChat, setactiveChat] = (0, _react.useState)(null);
+    const [chatName, setchatName] = (0, _react.useState)(null);
+    const [chatData, setchatData] = (0, _react.useState)(null);
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const [token, setToken] = (0, _react.useState)(null);
+    const [notifications, setNotifications] = (0, _react.useState)([]);
+    const [remainingHeight, setRemainingHeight] = (0, _react.useState)(0);
+    const [isVisible, setisVisible] = (0, _react.useState)(window.innerWidth > 1024); // Moved inside the component
+    (0, _react.useEffect)(()=>{
+        if (localStorage.getItem("userInfo")) {
+            const userinfo = JSON.parse(localStorage.getItem("userInfo"));
+            setUser(userinfo);
+            setToken(userinfo?.token);
+            if (!userinfo) navigate("/");
+        }
+    }, []); // Removed useNavigate from the dependency array
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(userContext.Provider, {
+        value: {
+            user,
+            setUser,
+            allChats,
+            setAllchats,
+            searchuserId,
+            setsearchuserId,
+            token,
+            setToken,
+            activeChat,
+            setactiveChat,
+            chatName,
+            setchatName,
+            chatData,
+            setchatData,
+            isVisible,
+            setisVisible,
+            notifications,
+            setNotifications,
+            remainingHeight,
+            setRemainingHeight
+        },
+        children: children
+    }, void 0, false, {
+        fileName: "src/utils/userContext.js",
+        lineNumber: 28,
+        columnNumber: 10
+    }, undefined);
 };
-_c = Navlink;
-exports.default = Navlink;
+_s(UserProvider, "xmO02j49VO74TYFkabAFBJRqB9M=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
+_c = UserProvider;
 var _c;
-$RefreshReg$(_c, "Navlink");
+$RefreshReg$(_c, "UserProvider");
 
-  $parcel$ReactRefreshHelpers$9011.postlude(module);
+  $parcel$ReactRefreshHelpers$268f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -34409,48 +34386,7 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"786KC"}],"ajUkj":[function(require,module,exports) {
-module.exports = require("268f13ea77028300").getBundleURL("aXMci") + "Mobile.9e3f6682.mp4" + "?" + Date.now();
-
-},{"268f13ea77028300":"lgJ39"}],"lgJ39":[function(require,module,exports) {
-"use strict";
-var bundleURL = {};
-function getBundleURLCached(id) {
-    var value = bundleURL[id];
-    if (!value) {
-        value = getBundleURL();
-        bundleURL[id] = value;
-    }
-    return value;
-}
-function getBundleURL() {
-    try {
-        throw new Error();
-    } catch (err) {
-        var matches = ("" + err.stack).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^)\n]+/g);
-        if (matches) // The first two stack frames will be this function and getBundleURLCached.
-        // Use the 3rd one, which will be a runtime in the original bundle.
-        return getBaseURL(matches[2]);
-    }
-    return "/";
-}
-function getBaseURL(url) {
-    return ("" + url).replace(/^((?:https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/.+)\/[^/]+$/, "$1") + "/";
-}
-// TODO: Replace uses with `new URL(url).origin` when ie11 is no longer supported.
-function getOrigin(url) {
-    var matches = ("" + url).match(/(https?|file|ftp|(chrome|moz|safari-web)-extension):\/\/[^/]+/);
-    if (!matches) throw new Error("Origin not found");
-    return matches[0];
-}
-exports.getBundleURL = getBundleURLCached;
-exports.getBaseURL = getBaseURL;
-exports.getOrigin = getOrigin;
-
-},{}],"gHyON":[function(require,module,exports) {
-module.exports = require("e3e949ba1a565727").getBundleURL("aXMci") + "Hamburger.a97a292d.png" + "?" + Date.now();
-
-},{"e3e949ba1a565727":"lgJ39"}],"aufND":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"786KC"}],"aufND":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$257a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34462,124 +34398,132 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _socialMediaMp4 = require("url:../assets/Social media.mp4");
-var _socialMediaMp4Default = parcelHelpers.interopDefault(_socialMediaMp4);
-var _globalizationMp4 = require("url:../assets/Globalization.mp4");
-var _globalizationMp4Default = parcelHelpers.interopDefault(_globalizationMp4);
+var _home1Mp4 = require("url:../assets/home1.mp4");
+var _home1Mp4Default = parcelHelpers.interopDefault(_home1Mp4);
+var _home2Mp4 = require("url:../assets/home2.mp4");
+var _home2Mp4Default = parcelHelpers.interopDefault(_home2Mp4);
 var _reactRouterDom = require("react-router-dom");
+var _userContext = require("../utils/userContext");
+var _waveSvg = require("../assets/wave.svg");
+var _waveSvgDefault = parcelHelpers.interopDefault(_waveSvg);
+var _s = $RefreshSig$();
 const Home = ()=>{
+    _s();
+    const { remainingHeight, setRemainingHeight } = (0, _react.useContext)((0, _userContext.userContext));
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "w-[90vw] pt-3 mx-auto   lg:-translate-x-7",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    className: "font-mono text-center  text-2xl sm:text-4xl",
-                    children: "Blabber: Where conversations never end !"
-                }, void 0, false, {
-                    fileName: "src/pages/Home.jsx",
-                    lineNumber: 10,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "sm:flex items-center justify-center ",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "w-85vw mx-auto sm:w-1/2 overflow-hidden",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
-                                loop: true,
-                                autoPlay: true,
-                                muted: true,
-                                className: "w-full sm:w-[80%]  mx-auto",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
-                                    src: (0, _socialMediaMp4Default.default),
-                                    type: "video/mp4"
-                                }, void 0, false, {
-                                    fileName: "src/pages/Home.jsx",
-                                    lineNumber: 16,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/pages/Home.jsx",
-                                lineNumber: 15,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/pages/Home.jsx",
-                            lineNumber: 14,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "sm:w-[40%]   font-['Basis']  my-auto text-center overflow-hidden",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                    className: "text-xl text-center sm:text-2xl sm:text-left sm:pt-5",
-                                    children: "Blabber Makes it easy and fun to stay in touch & communicate anywhere anyplace with anyone"
-                                }, void 0, false, {
-                                    fileName: "src/pages/Home.jsx",
-                                    lineNumber: 23,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "hidden sm:block pt-5 ",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
-                                        loop: true,
-                                        autoPlay: true,
-                                        muted: true,
-                                        className: "w-[78%]  mx-auto ",
-                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
-                                            src: (0, _globalizationMp4Default.default),
-                                            type: "video/mp4"
-                                        }, void 0, false, {
-                                            fileName: "src/pages/Home.jsx",
-                                            lineNumber: 29,
-                                            columnNumber: 17
-                                        }, undefined)
+            className: " bg-bgcolor my-auto pt-2 md:pt-0",
+            style: {
+                height: `${remainingHeight}px`
+            },
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "pt-2 mx-auto flex flex-col items-center justify-center gap-y-4 md:gap-y-8 text-white max-w-7xl",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "text-3xl  md:text-5xl font-bold tracking-wide",
+                        children: "Blabber The Chat App"
+                    }, void 0, false, {
+                        fileName: "src/pages/Home.jsx",
+                        lineNumber: 18,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        className: "text-md md:text-lg tracking-wide font-medium text-center px-4 pt-1",
+                        children: "Blabber Makes it easy and fun to stay in touch & communicate anywhere anyplace with anyone"
+                    }, void 0, false, {
+                        fileName: "src/pages/Home.jsx",
+                        lineNumber: 21,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex items-center justify-center w-full gap-x-2 overflow-hidden",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex-1 max-w-lg p-2 hidden md:block",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+                                    loop: true,
+                                    autoPlay: true,
+                                    muted: true,
+                                    className: "w-full h-auto rounded-lg",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                                        src: (0, _home1Mp4Default.default),
+                                        HomeVideo: true,
+                                        type: "video/mp4"
                                     }, void 0, false, {
                                         fileName: "src/pages/Home.jsx",
                                         lineNumber: 28,
-                                        columnNumber: 15
+                                        columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/pages/Home.jsx",
                                     lineNumber: 27,
-                                    columnNumber: 13
+                                    columnNumber: 15
                                 }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/pages/Home.jsx",
-                            lineNumber: 19,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/pages/Home.jsx",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "mt-4 translate-y-0 sm:mx-auto sm:-translate-y-4 translate-x-1 text-center",
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        className: "px-5 py-1 sm:px-10 sm:py-2 rounded-lg bg-green-700 text-white hover:bg-slate-800 transition-all block-inline duration-300  ",
+                            }, void 0, false, {
+                                fileName: "src/pages/Home.jsx",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "flex-1 max-w-lg p-2",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+                                    loop: true,
+                                    autoPlay: true,
+                                    muted: true,
+                                    className: "w-full h-auto rounded-lg",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                                        src: (0, _home2Mp4Default.default),
+                                        type: "video/mp4"
+                                    }, void 0, false, {
+                                        fileName: "src/pages/Home.jsx",
+                                        lineNumber: 33,
+                                        columnNumber: 17
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/pages/Home.jsx",
+                                    lineNumber: 32,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/pages/Home.jsx",
+                                lineNumber: 31,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/pages/Home.jsx",
+                        lineNumber: 25,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                         to: "/login",
-                        children: "Start Messaging"
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "bg-bgbutton px-10 py-2 rounded-sm transform-cpu active:scale-75 duration-300 tracking-wide text-black hover:bg-white hover:text-black font-[Mona]",
+                            children: "Start Journey"
+                        }, void 0, false, {
+                            fileName: "src/pages/Home.jsx",
+                            lineNumber: 39,
+                            columnNumber: 13
+                        }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/Home.jsx",
-                        lineNumber: 35,
+                        lineNumber: 38,
                         columnNumber: 11
                     }, undefined)
-                }, void 0, false, {
-                    fileName: "src/pages/Home.jsx",
-                    lineNumber: 34,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/Home.jsx",
+                lineNumber: 17,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/pages/Home.jsx",
-            lineNumber: 9,
+            lineNumber: 14,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
 };
+_s(Home, "AKOnckUxA9A0ml99JBQCI/CQF1Y=");
 _c = Home;
 exports.default = Home;
 var _c;
@@ -34590,13 +34534,16 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","url:../assets/Social media.mp4":"arCNf","url:../assets/Globalization.mp4":"767gf","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"arCNf":[function(require,module,exports) {
-module.exports = require("55f8b96ea709bee6").getBundleURL("aXMci") + "Social media.2c6ab26f.mp4" + "?" + Date.now();
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","url:../assets/home1.mp4":"lVRE9","url:../assets/home2.mp4":"eUgoI","react-router-dom":"9xmpe","../utils/userContext":"eBA1b","../assets/wave.svg":"j7AqN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lVRE9":[function(require,module,exports) {
+module.exports = require("95e63070bafcd845").getBundleURL("aXMci") + "home1.c1044912.mp4" + "?" + Date.now();
 
-},{"55f8b96ea709bee6":"lgJ39"}],"767gf":[function(require,module,exports) {
-module.exports = require("fb442270ceb71534").getBundleURL("aXMci") + "Globalization.2744f009.mp4" + "?" + Date.now();
+},{"95e63070bafcd845":"lgJ39"}],"eUgoI":[function(require,module,exports) {
+module.exports = require("f46e66bbdc113d2c").getBundleURL("aXMci") + "home2.946a47f8.mp4" + "?" + Date.now();
 
-},{"fb442270ceb71534":"lgJ39"}],"2ZFKU":[function(require,module,exports) {
+},{"f46e66bbdc113d2c":"lgJ39"}],"j7AqN":[function(require,module,exports) {
+module.exports = require("5c09264e025c8bc5").getBundleURL("aXMci") + "wave.733d2db0.svg" + "?" + Date.now();
+
+},{"5c09264e025c8bc5":"lgJ39"}],"2ZFKU":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$d23d = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34614,11 +34561,21 @@ var _login = require("../components/Login");
 var _loginDefault = parcelHelpers.interopDefault(_login);
 var _signup = require("../components/Signup");
 var _signupDefault = parcelHelpers.interopDefault(_signup);
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const LoginSignupUser = ()=>{
     _s();
+    const navigate = (0, _reactRouterDom.useNavigate)();
+    const userinfo = JSON.parse(localStorage.getItem("userInfo"));
+    const name = userinfo?.name;
+    (0, _react.useEffect)(()=>{
+        if (name) navigate("/chats");
+    }, [
+        name,
+        navigate
+    ]);
     const [loginstate, Setloginstate] = (0, _react.useState)(false);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return !name ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "flex justify-center items-center  md:p-4",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "w-full max-w-lg md:max-w-[85%] p-4 md:p-[1.5rem] overflow-hidden",
@@ -34631,50 +34588,54 @@ const LoginSignupUser = ()=>{
                             Setloginstate: Setloginstate
                         }, void 0, false, {
                             fileName: "src/pages/LoginSignup.jsx",
-                            lineNumber: 15,
-                            columnNumber: 15
+                            lineNumber: 21,
+                            columnNumber: 27
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _signupDefault.default), {
                             Setloginstate: Setloginstate
                         }, void 0, false, {
                             fileName: "src/pages/LoginSignup.jsx",
-                            lineNumber: 17,
-                            columnNumber: 15
+                            lineNumber: 21,
+                            columnNumber: 69
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/LoginSignup.jsx",
-                        lineNumber: 13,
+                        lineNumber: 20,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "hidden md:block w-full md:w-[60%] mx-auto",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _videocardDefault.default), {}, void 0, false, {
                             fileName: "src/pages/LoginSignup.jsx",
-                            lineNumber: 21,
+                            lineNumber: 24,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/pages/LoginSignup.jsx",
-                        lineNumber: 20,
+                        lineNumber: 23,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/pages/LoginSignup.jsx",
-                lineNumber: 12,
+                lineNumber: 19,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/pages/LoginSignup.jsx",
-            lineNumber: 11,
+            lineNumber: 18,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/pages/LoginSignup.jsx",
-        lineNumber: 10,
-        columnNumber: 5
-    }, undefined);
+        lineNumber: 17,
+        columnNumber: 18
+    }, undefined) : null;
 };
-_s(LoginSignupUser, "6e+tNs3yy0//kwZW5sddb1I4TlQ=");
+_s(LoginSignupUser, "wzz2ddXEotVyNCpI8NXQOENs0wo=", false, function() {
+    return [
+        (0, _reactRouterDom.useNavigate)
+    ];
+});
 _c = LoginSignupUser;
 exports.default = LoginSignupUser;
 var _c;
@@ -34685,7 +34646,7 @@ $RefreshReg$(_c, "LoginSignupUser");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../components/Videocard":"7VO5W","../components/Login":"9LO69","../components/Signup":"a4MKG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7VO5W":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../components/Videocard":"7VO5W","../components/Login":"9LO69","../components/Signup":"a4MKG","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7VO5W":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b807 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -34712,12 +34673,12 @@ const Videocard = ()=>{
                 type: "video/mp4"
             }, void 0, false, {
                 fileName: "src/components/Videocard.jsx",
-                lineNumber: 14,
+                lineNumber: 6,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/Videocard.jsx",
-            lineNumber: 7,
+            lineNumber: 5,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
@@ -34776,7 +34737,6 @@ const Login = ({ Setloginstate })=>{
         try {
             const response = await (0, _axiosDefault.default).post("http://localhost:5000/api/users/login", formData);
             localStorage.setItem("userInfo", JSON.stringify(await response.data));
-            console.log(response.data);
             navigate("/chats"); // Assuming successful login
         } catch (error) {
             if (error.response && error.response.data.error) {
@@ -34792,8 +34752,7 @@ const Login = ({ Setloginstate })=>{
                         message: responseError
                     }
                 ]);
-            } else // Request failed before reaching server
-            console.error("Error:", error.message);
+            }
         }
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -34805,7 +34764,7 @@ const Login = ({ Setloginstate })=>{
                         children: "Login to your Account"
                     }, void 0, false, {
                         fileName: "src/components/Login.jsx",
-                        lineNumber: 55,
+                        lineNumber: 50,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
@@ -34814,13 +34773,13 @@ const Login = ({ Setloginstate })=>{
                         alt: "Blabber"
                     }, void 0, false, {
                         fileName: "src/components/Login.jsx",
-                        lineNumber: 56,
+                        lineNumber: 51,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Login.jsx",
-                lineNumber: 54,
+                lineNumber: 49,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34834,7 +34793,7 @@ const Login = ({ Setloginstate })=>{
                                 children: "username"
                             }, void 0, false, {
                                 fileName: "src/components/Login.jsx",
-                                lineNumber: 60,
+                                lineNumber: 55,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -34847,7 +34806,7 @@ const Login = ({ Setloginstate })=>{
                                 required: true
                             }, void 0, false, {
                                 fileName: "src/components/Login.jsx",
-                                lineNumber: 61,
+                                lineNumber: 56,
                                 columnNumber: 11
                             }, undefined),
                             errors.map((error, index)=>error.field === "username" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34856,20 +34815,20 @@ const Login = ({ Setloginstate })=>{
                                         children: error.message
                                     }, void 0, false, {
                                         fileName: "src/components/Login.jsx",
-                                        lineNumber: 74,
+                                        lineNumber: 58,
                                         columnNumber: 19
                                     }, undefined)
                                 }, index, false, {
                                     fileName: "src/components/Login.jsx",
-                                    lineNumber: 73,
-                                    columnNumber: 17
+                                    lineNumber: 57,
+                                    columnNumber: 71
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 className: "block pt-4 pb-1 px-1 text-[1.1rem]",
                                 children: "password"
                             }, void 0, false, {
                                 fileName: "src/components/Login.jsx",
-                                lineNumber: 79,
+                                lineNumber: 61,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34885,7 +34844,7 @@ const Login = ({ Setloginstate })=>{
                                         required: true
                                     }, void 0, false, {
                                         fileName: "src/components/Login.jsx",
-                                        lineNumber: 81,
+                                        lineNumber: 63,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34896,18 +34855,18 @@ const Login = ({ Setloginstate })=>{
                                             alt: "/"
                                         }, void 0, false, {
                                             fileName: "src/components/Login.jsx",
-                                            lineNumber: 94,
+                                            lineNumber: 65,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Login.jsx",
-                                        lineNumber: 90,
+                                        lineNumber: 64,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Login.jsx",
-                                lineNumber: 80,
+                                lineNumber: 62,
                                 columnNumber: 11
                             }, undefined),
                             errors.map((error, index)=>error.field === "password" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34916,18 +34875,18 @@ const Login = ({ Setloginstate })=>{
                                         children: error.message
                                     }, void 0, false, {
                                         fileName: "src/components/Login.jsx",
-                                        lineNumber: 101,
+                                        lineNumber: 69,
                                         columnNumber: 19
                                     }, undefined)
                                 }, index, false, {
                                     fileName: "src/components/Login.jsx",
-                                    lineNumber: 100,
-                                    columnNumber: 17
+                                    lineNumber: 68,
+                                    columnNumber: 71
                                 }, undefined))
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Login.jsx",
-                        lineNumber: 59,
+                        lineNumber: 54,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -34939,13 +34898,13 @@ const Login = ({ Setloginstate })=>{
                                         children: error.message
                                     }, void 0, false, {
                                         fileName: "src/components/Login.jsx",
-                                        lineNumber: 111,
+                                        lineNumber: 74,
                                         columnNumber: 19
                                     }, undefined)
                                 }, index, false, {
                                     fileName: "src/components/Login.jsx",
-                                    lineNumber: 110,
-                                    columnNumber: 17
+                                    lineNumber: 73,
+                                    columnNumber: 57
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "pt-10 flex flex-col",
@@ -34961,7 +34920,7 @@ const Login = ({ Setloginstate })=>{
                                         children: "Get test Credentials"
                                     }, void 0, false, {
                                         fileName: "src/components/Login.jsx",
-                                        lineNumber: 116,
+                                        lineNumber: 77,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -34970,13 +34929,13 @@ const Login = ({ Setloginstate })=>{
                                         children: "Log In"
                                     }, void 0, false, {
                                         fileName: "src/components/Login.jsx",
-                                        lineNumber: 127,
+                                        lineNumber: 85,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Login.jsx",
-                                lineNumber: 115,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -34992,36 +34951,36 @@ const Login = ({ Setloginstate })=>{
                                             children: "Signup"
                                         }, void 0, false, {
                                             fileName: "src/components/Login.jsx",
-                                            lineNumber: 138,
+                                            lineNumber: 93,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Login.jsx",
-                                        lineNumber: 137,
+                                        lineNumber: 92,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Login.jsx",
-                                lineNumber: 135,
+                                lineNumber: 90,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Login.jsx",
-                        lineNumber: 106,
+                        lineNumber: 72,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Login.jsx",
-                lineNumber: 58,
+                lineNumber: 53,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Login, "tMp3qKNmKcQT3gn7DrMGoqivefI=", false, function() {
+_s(Login, "6Brq7uMW8ws0d4Ph6Tl2/bXRLjo=", false, function() {
     return [
         (0, _reactRouterDom.useNavigate)
     ];
@@ -39464,45 +39423,32 @@ const Signup = ({ Setloginstate })=>{
     };
     const handleUpload = async ()=>{
         if (!selectedFile) return null;
-        const formData = new FormData();
-        formData.append("file", selectedFile);
-        formData.append("upload_preset", "Blabber");
+        const uploadData = new FormData();
+        uploadData.append("file", selectedFile);
+        uploadData.append("upload_preset", "Blabber");
         try {
             const response = await fetch(`https://api.cloudinary.com/v1_1/dz093s3fc/image/upload`, {
                 method: "POST",
-                body: formData
+                body: uploadData
             });
             const data = await response.json();
-            console.log("Upload Success:", data);
             return data.url;
         } catch (error) {
-            console.log("Upload Error:", error);
+            return null;
         }
     };
     const handleSignup = async ()=>{
         const profilePicUrl = await handleUpload();
-        // Create a new object based on formData
-        let dataToSend = {
+        const dataToSend = {
             ...formData
         };
-        // If rofilePicUrl is not null, add it to dataToSend
-        if (profilePicUrl) dataToSend.profilePic = profilePicUrl;
+        if (profilePicUrl) dataToSend.pic = profilePicUrl;
         try {
             const response = await (0, _axiosDefault.default).post("http://localhost:5000/api/users/signup", dataToSend);
-            localStorage.setItem("userInfo", JSON.stringify(await response.data));
-            console.log(response.data);
-            navigate("/chats"); // Assuming successful signup
+            localStorage.setItem("userInfo", JSON.stringify(response.data));
+            navigate("/chats");
         } catch (error) {
-            if (error.response) {
-                // Server responded with an error
-                const { error: responseError } = error.response.data;
-                setErrors(Array.isArray(responseError) ? responseError : [
-                    {
-                        message: responseError
-                    }
-                ]);
-            } else // Request failed before reaching server
-            console.error("Error:", error.message);
+            if (error.response && error.response.data && error.response.data.errors) setErrors(error.response.data.errors);
         }
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39512,7 +39458,7 @@ const Signup = ({ Setloginstate })=>{
                 children: "Where great minds blabber"
             }, void 0, false, {
                 fileName: "src/components/Signup.jsx",
-                lineNumber: 90,
+                lineNumber: 65,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -39520,11 +39466,11 @@ const Signup = ({ Setloginstate })=>{
                 children: "Sign up today."
             }, void 0, false, {
                 fileName: "src/components/Signup.jsx",
-                lineNumber: 91,
+                lineNumber: 66,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "text-left mx-7 ",
+                className: "text-left mx-7",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "px-1",
@@ -39534,11 +39480,11 @@ const Signup = ({ Setloginstate })=>{
                                 children: "Name"
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 95,
+                                lineNumber: 70,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                className: "border-2 border-slate-600 rounded-md px-1 w-[100%]  h-[2rem]",
+                                className: "border-2 border-slate-600 rounded-md px-1 w-[100%] h-[2rem]",
                                 type: "text",
                                 name: "name",
                                 placeholder: "Enter your Name",
@@ -39546,7 +39492,7 @@ const Signup = ({ Setloginstate })=>{
                                 onChange: handleChange
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 96,
+                                lineNumber: 71,
                                 columnNumber: 11
                             }, undefined),
                             errors.map((error, index)=>error.field === "name" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39554,19 +39500,19 @@ const Signup = ({ Setloginstate })=>{
                                     children: error.message
                                 }, index, false, {
                                     fileName: "src/components/Signup.jsx",
-                                    lineNumber: 108,
-                                    columnNumber: 17
+                                    lineNumber: 72,
+                                    columnNumber: 67
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 className: "block pt-4 pb-1 px-1 text-[1.1rem]",
                                 children: "Username"
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 114,
+                                lineNumber: 76,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                className: "border-2 border-slate-600 rounded-md px-1 w-[100%]  h-[2rem]",
+                                className: "border-2 border-slate-600 rounded-md px-1 w-[100%] h-[2rem]",
                                 type: "text",
                                 name: "uname",
                                 placeholder: "Enter your email",
@@ -39574,7 +39520,7 @@ const Signup = ({ Setloginstate })=>{
                                 onChange: handleChange
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 115,
+                                lineNumber: 77,
                                 columnNumber: 11
                             }, undefined),
                             errors.map((error, index)=>error.field === "uname" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39582,22 +39528,22 @@ const Signup = ({ Setloginstate })=>{
                                     children: error.message
                                 }, index, false, {
                                     fileName: "src/components/Signup.jsx",
-                                    lineNumber: 127,
-                                    columnNumber: 17
+                                    lineNumber: 78,
+                                    columnNumber: 68
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 className: "block pt-4 pb-1 px-1 text-[1.1rem]",
                                 children: "Password"
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 133,
+                                lineNumber: 82,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "relative",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                        className: "border-2 border-slate-600 rounded-md px-1 w-[100%]  h-[2rem]",
+                                        className: "border-2 border-slate-600 rounded-md px-1 w-[100%] h-[2rem]",
                                         type: eyelogo ? "password" : "text",
                                         name: "pass",
                                         placeholder: "Enter your Password",
@@ -39605,29 +39551,30 @@ const Signup = ({ Setloginstate })=>{
                                         onChange: handleChange
                                     }, void 0, false, {
                                         fileName: "src/components/Signup.jsx",
-                                        lineNumber: 135,
+                                        lineNumber: 84,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                        className: `absolute right-2 top-1 w-[26px] `,
+                                        type: "button",
+                                        className: "absolute right-2 top-1 w-[26px]",
                                         onClick: ()=>Seteyelogo(!eyelogo),
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                             src: eyelogo ? (0, _eyePngDefault.default) : (0, _hiddenPngDefault.default),
-                                            alt: "/"
+                                            alt: "Toggle visibility"
                                         }, void 0, false, {
                                             fileName: "src/components/Signup.jsx",
-                                            lineNumber: 148,
+                                            lineNumber: 86,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Signup.jsx",
-                                        lineNumber: 144,
+                                        lineNumber: 85,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 134,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, undefined),
                             errors.map((error, index)=>error.field === "pass" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39635,31 +39582,32 @@ const Signup = ({ Setloginstate })=>{
                                     children: error.message
                                 }, index, false, {
                                     fileName: "src/components/Signup.jsx",
-                                    lineNumber: 155,
-                                    columnNumber: 17
+                                    lineNumber: 89,
+                                    columnNumber: 67
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                                 className: "block pt-4 pb-2 px-1 text-[1.1rem]",
                                 children: "Upload your profile picture"
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 161,
+                                lineNumber: 93,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "file",
                                 id: "img",
                                 name: "img",
-                                accept: "image/*"
+                                accept: "image/*",
+                                onChange: handleFileChange
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 164,
+                                lineNumber: 96,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Signup.jsx",
-                        lineNumber: 94,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, undefined),
                     errors.map((error, index)=>!error.field && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39668,13 +39616,13 @@ const Signup = ({ Setloginstate })=>{
                                 children: error.message
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 171,
+                                lineNumber: 99,
                                 columnNumber: 17
                             }, undefined)
                         }, index, false, {
                             fileName: "src/components/Signup.jsx",
-                            lineNumber: 170,
-                            columnNumber: 15
+                            lineNumber: 98,
+                            columnNumber: 55
                         }, undefined)),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "flex flex-col items-center pt-6",
@@ -39685,7 +39633,7 @@ const Signup = ({ Setloginstate })=>{
                                 children: "Sign Up"
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 177,
+                                lineNumber: 103,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -39701,40 +39649,40 @@ const Signup = ({ Setloginstate })=>{
                                             children: "Login"
                                         }, void 0, false, {
                                             fileName: "src/components/Signup.jsx",
-                                            lineNumber: 186,
+                                            lineNumber: 109,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Signup.jsx",
-                                        lineNumber: 185,
+                                        lineNumber: 108,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 183,
+                                lineNumber: 106,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Signup.jsx",
-                        lineNumber: 176,
+                        lineNumber: 102,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Signup.jsx",
-                lineNumber: 93,
+                lineNumber: 68,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Signup.jsx",
-        lineNumber: 89,
-        columnNumber: 5
+        lineNumber: 64,
+        columnNumber: 10
     }, undefined);
 };
-_s(Signup, "fLuGulzQMDF0heVQ83uRR384SJI=", false, function() {
+_s(Signup, "c/7EwcpzaFa43sMqes+z/PsMBDg=", false, function() {
     return [
         (0, _reactRouterDom.useNavigate)
     ];
@@ -39749,83 +39697,7 @@ $RefreshReg$(_c, "Signup");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/eye.png":"j0uKt","../assets/hidden.png":"7swdN","react-router-dom":"9xmpe","axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eBA1b":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$268f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$268f.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "userContext", ()=>userContext);
-parcelHelpers.export(exports, "UserProvider", ()=>UserProvider);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _reactRouterDom = require("react-router-dom");
-var _s = $RefreshSig$();
-const userContext = /*#__PURE__*/ (0, _react.createContext)();
-const UserProvider = ({ children })=>{
-    _s();
-    const [user, setUser] = (0, _react.useState)();
-    const [allChats, setAllchats] = (0, _react.useState)([]);
-    const [searchuserId, setsearchuserId] = (0, _react.useState)(null);
-    const [activeChat, setactiveChat] = (0, _react.useState)(null);
-    const [chatName, setchatName] = (0, _react.useState)(null);
-    const [chatData, setchatData] = (0, _react.useState)(null);
-    const navigate = (0, _reactRouterDom.useNavigate)();
-    const [token, setToken] = (0, _react.useState)(null);
-    const [isVisible, setisVisible] = (0, _react.useState)(window.innerWidth > 1024); // Moved inside the component
-    (0, _react.useEffect)(()=>{
-        if (localStorage.getItem("userInfo")) {
-            const userinfo = JSON.parse(localStorage.getItem("userInfo"));
-            setUser(userinfo);
-            setToken(userinfo?.token);
-            if (!userinfo) navigate("/");
-        }
-    }, []); // Removed useNavigate from the dependency array
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(userContext.Provider, {
-        value: {
-            user,
-            setUser,
-            allChats,
-            setAllchats,
-            searchuserId,
-            setsearchuserId,
-            token,
-            setToken,
-            activeChat,
-            setactiveChat,
-            chatName,
-            setchatName,
-            chatData,
-            setchatData,
-            isVisible,
-            setisVisible
-        },
-        children: children
-    }, void 0, false, {
-        fileName: "src/utils/userContext.js",
-        lineNumber: 27,
-        columnNumber: 5
-    }, undefined);
-};
-_s(UserProvider, "ubNjvesjcNRTLmvzzU4PKfLMD+w=", false, function() {
-    return [
-        (0, _reactRouterDom.useNavigate)
-    ];
-});
-_c = UserProvider;
-var _c;
-$RefreshReg$(_c, "UserProvider");
-
-  $parcel$ReactRefreshHelpers$268f.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kHiO9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../assets/eye.png":"j0uKt","../assets/hidden.png":"7swdN","react-router-dom":"9xmpe","axios":"jo6P5","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kHiO9":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$46ba = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39844,10 +39716,13 @@ var _allChatsDefault = parcelHelpers.interopDefault(_allChats);
 var _sendMessage = require("../components/Chat/SendMessage");
 var _sendMessageDefault = parcelHelpers.interopDefault(_sendMessage);
 var _userContext = require("../utils/userContext");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const ChatPage = ()=>{
     _s();
     const { isVisible, setisVisible } = (0, _react.useContext)((0, _userContext.userContext));
+    const userinfo = JSON.parse(localStorage.getItem("userInfo"));
+    const name = userinfo?.name;
     (0, _react.useEffect)(()=>{
         const handleResize = ()=>{
             setisVisible(window.innerWidth > 1024);
@@ -39858,15 +39733,15 @@ const ChatPage = ()=>{
             window.removeEventListener("resize", handleResize);
         };
     }, []);
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+    return name ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _headerDefault.default), {}, void 0, false, {
                 fileName: "src/pages/ChatPage.jsx",
-                lineNumber: 25,
+                lineNumber: 26,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "flex flex-col h-[87vh] py-3 px-4 font-['Basis'] ",
+                className: "flex flex-col h-[87vh] py-3 px-4 font-['Basis'] max-w-full",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "flex justify-between h-full gap-x-4 relative",
                     children: [
@@ -39874,45 +39749,85 @@ const ChatPage = ()=>{
                             className: `font-["Basis"] transition-all duration-300 ease-in-out transform lg:translate-x-0 ${isVisible ? "translate-x-0" : "-translate-x-[120%] lg:translate-x-0"} w-[95vw] lg:w-[30vw] xl:w-[25vw] h-full absolute lg:relative z-10`,
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _allChatsDefault.default), {}, void 0, false, {
                                 fileName: "src/pages/ChatPage.jsx",
-                                lineNumber: 35,
+                                lineNumber: 30,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/pages/ChatPage.jsx",
-                            lineNumber: 28,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: " w-[99vw] md:w-[85vw] lg:w-[70vw] xl:w-[75vw] h-full mx-auto font-['Basis']",
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _sendMessageDefault.default), {}, void 0, false, {
                                 fileName: "src/pages/ChatPage.jsx",
-                                lineNumber: 38,
+                                lineNumber: 33,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/pages/ChatPage.jsx",
-                            lineNumber: 37,
+                            lineNumber: 32,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/pages/ChatPage.jsx",
-                    lineNumber: 27,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/pages/ChatPage.jsx",
-                lineNumber: 26,
+                lineNumber: 27,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/pages/ChatPage.jsx",
-        lineNumber: 24,
-        columnNumber: 5
-    }, undefined);
+        lineNumber: 25,
+        columnNumber: 17
+    }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "w-screen h-screen bg-bgcolor flex justify-center items-center",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-col items-center justify-center gap-y-4",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        className: "text-white text-3xl",
+                        children: "Login and try again"
+                    }, void 0, false, {
+                        fileName: "src/pages/ChatPage.jsx",
+                        lineNumber: 40,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                        to: "/login",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "px-3 py-2 bg-bgbutton transform-cpu active:scale-75 duration-300 rounded-md",
+                            children: "Login"
+                        }, void 0, false, {
+                            fileName: "src/pages/ChatPage.jsx",
+                            lineNumber: 42,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/pages/ChatPage.jsx",
+                        lineNumber: 41,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/pages/ChatPage.jsx",
+                lineNumber: 39,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/pages/ChatPage.jsx",
+            lineNumber: 38,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false);
 };
-_s(ChatPage, "be85e6TR6yKM1bIiBHi/odec3Ic=");
+_s(ChatPage, "JZAhXk5l/7pHPOldiAZSQo+xnPM=");
 _c = ChatPage;
 exports.default = ChatPage;
 var _c;
@@ -39923,7 +39838,7 @@ $RefreshReg$(_c, "ChatPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../components/Chat/Header":"gFHmj","../components/Chat/AllChats":"kBEyN","../components/Chat/SendMessage":"8QwIL","../utils/userContext":"eBA1b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gFHmj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../components/Chat/Header":"gFHmj","../components/Chat/AllChats":"kBEyN","../components/Chat/SendMessage":"8QwIL","../utils/userContext":"eBA1b","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gFHmj":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$b362 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -39943,11 +39858,13 @@ var _usersCardDefault = parcelHelpers.interopDefault(_usersCard);
 var _reactRouterDom = require("react-router-dom");
 var _profileModal = require("./ProfileModal");
 var _profileModalDefault = parcelHelpers.interopDefault(_profileModal);
+var _notificationGif = require("../../assets/notification.gif");
+var _notificationGifDefault = parcelHelpers.interopDefault(_notificationGif);
 var _s = $RefreshSig$();
 const Header = ()=>{
     _s();
     const { user, setUser } = (0, _react.useContext)((0, _userContext.userContext));
-    const { allChats, setAllchats, setactiveChat, activeChat, setchatData } = (0, _react.useContext)((0, _userContext.userContext));
+    const { allChats, setAllchats, setactiveChat, activeChat, setchatData, notifications, setNotifications } = (0, _react.useContext)((0, _userContext.userContext));
     const [sbar, setsbar] = (0, _react.useState)(false);
     const [suser, setsuser] = (0, _react.useState)("");
     const [users, setusers] = (0, _react.useState)([]);
@@ -39956,8 +39873,8 @@ const Header = ()=>{
     const userinfo = JSON.parse(localStorage.getItem("userInfo"));
     const [profileCard, setprofileCard] = (0, _react.useState)(false);
     const navigate = (0, _reactRouterDom.useNavigate)();
+    const [notitrigger, setnotitrigger] = (0, _react.useState)(false);
     const clickHandler = ()=>{
-        console.log(userinfo);
         const token = userinfo.token;
         (0, _axiosDefault.default).get(`http://localhost:5000/api/users/?search=${suser}`, {
             headers: {
@@ -39967,16 +39884,25 @@ const Header = ()=>{
             setusers([]);
             setusers(response.data);
             setsuser("");
-            console.log("Searched User");
-        }).catch((err)=>{
-            console.log(err.message);
-        });
+        }).catch((err)=>{});
     };
     const LogoutHandler = ()=>{
         localStorage.removeItem("userInfo");
         setUser(null);
         navigate("/");
     };
+    (0, _react.useEffect)(()=>{
+        if (notifications.length > 0) {
+            const audio = new Audio("../../assets/notification-tone.mp3");
+            const playAudio = ()=>{
+                audio.play().catch((error)=>{});
+            };
+            // Play audio when component mounts
+            playAudio();
+        }
+    }, [
+        notifications
+    ]);
     (0, _react.useEffect)(()=>{
         const handleToggleProfile = (event)=>{
             if (!event.target.closest(".profile-dropdown")) settgProfile((prevValue)=>false);
@@ -40001,65 +39927,151 @@ const Header = ()=>{
                                 children: "\uD83D\uDD0D Search for User"
                             }, void 0, false, {
                                 fileName: "src/components/Chat/Header.jsx",
-                                lineNumber: 72,
+                                lineNumber: 78,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Chat/Header.jsx",
-                            lineNumber: 71,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "hidden md:block text-4xl tracking-wider transform -translate-x-3",
+                            className: "hidden md:block text-2xl lg:text-4xl tracking-wider transform ",
                             children: "Blabber : The Chat App"
                         }, void 0, false, {
                             fileName: "src/components/Chat/Header.jsx",
-                            lineNumber: 79,
+                            lineNumber: 82,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "inline-block relative",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                className: "hover:bg-white hover:text-black px-4 py-2 hover:rounded-md cursor-pointer flex items-center justify-center gap-x-2 profile-dropdown transition-transform duration-200 transform-gpu active:scale-75",
-                                onClick: ()=>settgProfile(!tgProfile),
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        src: userinfo?.pic,
-                                        alt: "Profile",
-                                        className: "w-10 h-10"
-                                    }, void 0, false, {
+                            className: "flex gap-x-1 items-center",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    className: "text-2xl pt-1 relative",
+                                    onClick: ()=>setnotitrigger(!notitrigger),
+                                    children: !notifications.length > 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                        children: "\uD83D\uDD14"
+                                    }, void 0, false) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            src: (0, _notificationGifDefault.default),
+                                            alt: "/",
+                                            className: "w-12 h-12"
+                                        }, void 0, false, {
+                                            fileName: "src/components/Chat/Header.jsx",
+                                            lineNumber: 88,
+                                            columnNumber: 19
+                                        }, undefined)
+                                    }, void 0, false)
+                                }, void 0, false, {
+                                    fileName: "src/components/Chat/Header.jsx",
+                                    lineNumber: 86,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "inline-block relative",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                        className: "hover:bg-white hover:text-black px-4 py-2 hover:rounded-md cursor-pointer flex items-center justify-center gap-x-2 profile-dropdown transition-transform duration-200 transform-gpu active:scale-75",
+                                        onClick: ()=>settgProfile(!tgProfile),
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                                src: userinfo?.profilePic,
+                                                alt: "Profile",
+                                                className: "w-10 h-10 rounded-full object-cover"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Chat/Header.jsx",
+                                                lineNumber: 93,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                children: "\u25BC"
+                                            }, void 0, false, {
+                                                fileName: "src/components/Chat/Header.jsx",
+                                                lineNumber: 94,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "src/components/Chat/Header.jsx",
-                                        lineNumber: 87,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                                        children: "\u25BC"
-                                    }, void 0, false, {
-                                        fileName: "src/components/Chat/Header.jsx",
-                                        lineNumber: 88,
+                                        lineNumber: 92,
                                         columnNumber: 15
                                     }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/components/Chat/Header.jsx",
-                                lineNumber: 83,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
+                                }, void 0, false, {
+                                    fileName: "src/components/Chat/Header.jsx",
+                                    lineNumber: 91,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
                             fileName: "src/components/Chat/Header.jsx",
-                            lineNumber: 82,
+                            lineNumber: 85,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Chat/Header.jsx",
-                    lineNumber: 70,
+                    lineNumber: 76,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Chat/Header.jsx",
-                lineNumber: 69,
+                lineNumber: 75,
                 columnNumber: 7
+            }, undefined),
+            notitrigger && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "absolute top-[10%] md:top-[8%] right-0  bg-black px-2 py-3 transform -translate-x-[30%] md:-translate-x-[25 %] lg:-translate-x-[20%]",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "text-sm md:text-lg text-white",
+                    children: notifications.length > 0 ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex flex-col gap-y-1",
+                            children: notifications.map((currnotification, val)=>{
+                                return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: ()=>{
+                                        setnotitrigger(false);
+                                        setactiveChat(currnotification.activechatId);
+                                        setchatData(currnotification.chatdata);
+                                        setAllchats((previousChats)=>{
+                                            const chatExists = previousChats.some((chat)=>chat._id === currnotification.activechatId);
+                                            if (!chatExists) return [
+                                                currnotification.chatdata,
+                                                ...previousChats
+                                            ];
+                                            else return [
+                                                previousChats.find((chat)=>chat._id === currnotification.activechatId),
+                                                ...previousChats.filter((chat)=>chat._id !== currnotification.activechatId)
+                                            ];
+                                        });
+                                        setNotifications((previousNotification)=>{
+                                            return previousNotification.filter((notification)=>notification.activechatId !== currnotification.activechatId);
+                                        });
+                                    },
+                                    children: [
+                                        "You got new Message from ",
+                                        currnotification.name
+                                    ]
+                                }, val, true, {
+                                    fileName: "src/components/Chat/Header.jsx",
+                                    lineNumber: 108,
+                                    columnNumber: 22
+                                }, undefined);
+                            })
+                        }, void 0, false, {
+                            fileName: "src/components/Chat/Header.jsx",
+                            lineNumber: 106,
+                            columnNumber: 17
+                        }, undefined)
+                    }, void 0, false) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                        children: "No new Notifications"
+                    }, void 0, false)
+                }, void 0, false, {
+                    fileName: "src/components/Chat/Header.jsx",
+                    lineNumber: 104,
+                    columnNumber: 11
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/components/Chat/Header.jsx",
+                lineNumber: 103,
+                columnNumber: 23
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: `profile-dropdown fixed right-0 py-2 z-50 flex-col justify-center items-center  px-10 bg-slate-900 text-white  text-center transform transition-transform duration-200 ease-in-out font-['Basis'] ${tgProfile ? "translate-y-0" : "-translate-y-48 "}`,
@@ -40073,7 +40085,7 @@ const Header = ()=>{
                         children: "Profile"
                     }, void 0, false, {
                         fileName: "src/components/Chat/Header.jsx",
-                        lineNumber: 101,
+                        lineNumber: 131,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -40082,13 +40094,13 @@ const Header = ()=>{
                         children: "Logout"
                     }, void 0, false, {
                         fileName: "src/components/Chat/Header.jsx",
-                        lineNumber: 110,
+                        lineNumber: 137,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Chat/Header.jsx",
-                lineNumber: 96,
+                lineNumber: 130,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40102,7 +40114,7 @@ const Header = ()=>{
                                 children: "Search for users"
                             }, void 0, false, {
                                 fileName: "src/components/Chat/Header.jsx",
-                                lineNumber: 125,
+                                lineNumber: 145,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40116,7 +40128,7 @@ const Header = ()=>{
                                         onChange: (e)=>setsuser(e.target.value)
                                     }, void 0, false, {
                                         fileName: "src/components/Chat/Header.jsx",
-                                        lineNumber: 127,
+                                        lineNumber: 147,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -40128,19 +40140,19 @@ const Header = ()=>{
                                         children: "\uD83D\uDD0D"
                                     }, void 0, false, {
                                         fileName: "src/components/Chat/Header.jsx",
-                                        lineNumber: 134,
+                                        lineNumber: 148,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Chat/Header.jsx",
-                                lineNumber: 126,
+                                lineNumber: 146,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Chat/Header.jsx",
-                        lineNumber: 124,
+                        lineNumber: 144,
                         columnNumber: 9
                     }, undefined),
                     users != undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40156,26 +40168,26 @@ const Header = ()=>{
                                     setsbar: setsbar,
                                     __source: {
                                         fileName: "src/components/Chat/Header.jsx",
-                                        lineNumber: 150,
+                                        lineNumber: 159,
                                         columnNumber: 19
                                     },
                                     __self: undefined
                                 })
                             }, void 0, false, {
                                 fileName: "src/components/Chat/Header.jsx",
-                                lineNumber: 149,
-                                columnNumber: 17
+                                lineNumber: 158,
+                                columnNumber: 18
                             }, undefined);
                         })
                     }, void 0, false, {
                         fileName: "src/components/Chat/Header.jsx",
-                        lineNumber: 146,
-                        columnNumber: 11
+                        lineNumber: 156,
+                        columnNumber: 32
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Chat/Header.jsx",
-                lineNumber: 119,
+                lineNumber: 143,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40187,12 +40199,12 @@ const Header = ()=>{
                             ...userinfo
                         }, void 0, false, {
                             fileName: "src/components/Chat/Header.jsx",
-                            lineNumber: 171,
+                            lineNumber: 168,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Chat/Header.jsx",
-                        lineNumber: 170,
+                        lineNumber: 167,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40202,38 +40214,38 @@ const Header = ()=>{
                             children: "\u274C"
                         }, void 0, false, {
                             fileName: "src/components/Chat/Header.jsx",
-                            lineNumber: 175,
+                            lineNumber: 172,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Chat/Header.jsx",
-                        lineNumber: 174,
+                        lineNumber: 171,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Chat/Header.jsx",
-                lineNumber: 165,
+                lineNumber: 166,
                 columnNumber: 7
             }, undefined),
             profileCard && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "fixed inset-0 bg-black opacity-80 z-40 "
             }, void 0, false, {
                 fileName: "src/components/Chat/Header.jsx",
-                lineNumber: 181,
-                columnNumber: 9
+                lineNumber: 177,
+                columnNumber: 23
             }, undefined),
             sbar && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "fixed inset-0 bg-black opacity-80 z-40"
             }, void 0, false, {
                 fileName: "src/components/Chat/Header.jsx",
-                lineNumber: 185,
+                lineNumber: 180,
                 columnNumber: 16
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(Header, "YJobyzOtOoC123I7LWFCA6mQXJ4=", false, function() {
+_s(Header, "kSPKgzu16/5XWqwx7VbTyZa4C4E=", false, function() {
     return [
         (0, _reactRouterDom.useNavigate)
     ];
@@ -40248,7 +40260,7 @@ $RefreshReg$(_c, "Header");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils/userContext":"eBA1b","axios":"jo6P5","./UsersCard":"2wmLS","react-router-dom":"9xmpe","./ProfileModal":"03Gnn","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2wmLS":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils/userContext":"eBA1b","axios":"jo6P5","./UsersCard":"2wmLS","react-router-dom":"9xmpe","./ProfileModal":"03Gnn","../../assets/notification.gif":"4whaU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2wmLS":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$42ee = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40274,8 +40286,6 @@ const UsersCard = ({ name, email, _id, setsbar, idx, data })=>{
         const formdata = {
             userid: data._id
         };
-        console.log(formdata);
-        console.log(token);
         (0, _axiosDefault.default).post("http://localhost:5000/api/chat/", formdata, {
             headers: {
                 Authorization: `Bearer ${token}`
@@ -40294,10 +40304,7 @@ const UsersCard = ({ name, email, _id, setsbar, idx, data })=>{
             });
             setactiveChat(response.data._id);
             setchatData(response.data);
-            console.log(response.data);
-        }).catch((error)=>{
-            console.log(error.message);
-        });
+        }).catch((error)=>{});
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
         className: "w-full border-2 border-black rounded-lg bg-slate-200 py-3 text-left mx-auto hover:bg-green-400  transition-all duration-200 hover:border-white",
@@ -40313,7 +40320,7 @@ const UsersCard = ({ name, email, _id, setsbar, idx, data })=>{
                     name: name
                 }, void 0, false, {
                     fileName: "src/components/Chat/UsersCard.jsx",
-                    lineNumber: 61,
+                    lineNumber: 50,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40323,35 +40330,35 @@ const UsersCard = ({ name, email, _id, setsbar, idx, data })=>{
                             children: name
                         }, void 0, false, {
                             fileName: "src/components/Chat/UsersCard.jsx",
-                            lineNumber: 63,
+                            lineNumber: 52,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                             children: email
                         }, void 0, false, {
                             fileName: "src/components/Chat/UsersCard.jsx",
-                            lineNumber: 64,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Chat/UsersCard.jsx",
-                    lineNumber: 62,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Chat/UsersCard.jsx",
-            lineNumber: 60,
+            lineNumber: 49,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Chat/UsersCard.jsx",
-        lineNumber: 52,
-        columnNumber: 5
+        lineNumber: 44,
+        columnNumber: 10
     }, undefined);
 };
-_s(UsersCard, "MkBvF1FAvjGmxYfcB9rw6MQ/qRY=");
+_s(UsersCard, "U7TeZsj7pQm/M+DTWiD5wuW+zmk=");
 _c = UsersCard;
 exports.default = UsersCard;
 var _c;
@@ -40382,8 +40389,8 @@ const Avatar = ({ name })=>{
         children: firstLetter
     }, void 0, false, {
         fileName: "src/components/Chat/Avatar.jsx",
-        lineNumber: 8,
-        columnNumber: 5
+        lineNumber: 7,
+        columnNumber: 10
     }, undefined);
 };
 _c = Avatar;
@@ -40408,7 +40415,7 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-const ProfileModal = ({ name, email, pic })=>{
+const ProfileModal = ({ name, email, profilePic, pic, data })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "flex items-center justify-center min-h-screen",
@@ -40420,38 +40427,38 @@ const ProfileModal = ({ name, email, pic })=>{
                         children: name
                     }, void 0, false, {
                         fileName: "src/components/Chat/ProfileModal.jsx",
-                        lineNumber: 11,
+                        lineNumber: 13,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                        src: pic,
+                        src: profilePic ? profilePic : pic,
                         alt: "Profile Pic",
-                        className: "w-40 h-440 rounded-full"
+                        className: "w-[150px] h-[150px] rounded-full"
                     }, void 0, false, {
                         fileName: "src/components/Chat/ProfileModal.jsx",
-                        lineNumber: 12,
+                        lineNumber: 14,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "text-xl sm:text-2xl tracking-wide ",
+                        className: "text-md sm:text-2xl tracking-wide ",
                         children: [
                             "Email : ",
                             email
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Chat/ProfileModal.jsx",
-                        lineNumber: 17,
+                        lineNumber: 15,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Chat/ProfileModal.jsx",
-                lineNumber: 7,
+                lineNumber: 11,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/components/Chat/ProfileModal.jsx",
-            lineNumber: 6,
+            lineNumber: 10,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
@@ -40466,7 +40473,10 @@ $RefreshReg$(_c, "ProfileModal");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"kBEyN":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4whaU":[function(require,module,exports) {
+module.exports = require("3a98166a3ad03b10").getBundleURL("aXMci") + "notification.34dd6717.gif" + "?" + Date.now();
+
+},{"3a98166a3ad03b10":"lgJ39"}],"kBEyN":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$cc2f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -40491,7 +40501,7 @@ const AllChats = ()=>{
     const { allChats, setAllchats, chatData, setactiveChat, setchatData, isVisible, setisVisible } = (0, _react.useContext)((0, _userContextJs.userContext));
     const [creategc, setcreatgc] = (0, _react.useState)(false);
     const userinfo = JSON.parse(localStorage.getItem("userInfo"));
-    const token = userinfo.token;
+    const token = userinfo?.token;
     (0, _react.useEffect)(()=>{
         const url = "http://localhost:5000/api/chat/";
         (0, _axiosDefault.default).get(url, {
@@ -40506,12 +40516,12 @@ const AllChats = ()=>{
                 setactiveChat(sortedData[0]._id);
                 setchatData(sortedData[0]);
             }
-        }).catch((err)=>console.log(err.message));
+        }).catch((err)=>void 0);
     }, []);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "w-full h-full  border-2 border-black rounded-lg bg-slate-50",
+                className: "w-full h-full  border-2 border-black rounded-lg bg-slate-50 mr-2",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "flex justify-between pt-5 px-3 items-center",
@@ -40521,7 +40531,7 @@ const AllChats = ()=>{
                                 children: "My Chats"
                             }, void 0, false, {
                                 fileName: "src/components/Chat/AllChats.jsx",
-                                lineNumber: 49,
+                                lineNumber: 39,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -40530,7 +40540,7 @@ const AllChats = ()=>{
                                 children: "Create Grp Chat \u2795"
                             }, void 0, false, {
                                 fileName: "src/components/Chat/AllChats.jsx",
-                                lineNumber: 50,
+                                lineNumber: 40,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -40539,13 +40549,13 @@ const AllChats = ()=>{
                                 children: "\u274C"
                             }, void 0, false, {
                                 fileName: "src/components/Chat/AllChats.jsx",
-                                lineNumber: 57,
+                                lineNumber: 44,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Chat/AllChats.jsx",
-                        lineNumber: 48,
+                        lineNumber: 38,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40560,26 +40570,26 @@ const AllChats = ()=>{
                                     idx: index,
                                     __source: {
                                         fileName: "src/components/Chat/AllChats.jsx",
-                                        lineNumber: 69,
-                                        columnNumber: 19
+                                        lineNumber: 51,
+                                        columnNumber: 20
                                     },
                                     __self: undefined
                                 });
                             })
                         }, void 0, false, {
                             fileName: "src/components/Chat/AllChats.jsx",
-                            lineNumber: 66,
-                            columnNumber: 13
+                            lineNumber: 49,
+                            columnNumber: 37
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/components/Chat/AllChats.jsx",
-                        lineNumber: 64,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Chat/AllChats.jsx",
-                lineNumber: 47,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
             creategc && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40590,30 +40600,30 @@ const AllChats = ()=>{
                         setcreatgc: setcreatgc
                     }, void 0, false, {
                         fileName: "src/components/Chat/AllChats.jsx",
-                        lineNumber: 82,
+                        lineNumber: 61,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Chat/AllChats.jsx",
-                    lineNumber: 81,
+                    lineNumber: 60,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Chat/AllChats.jsx",
-                lineNumber: 80,
-                columnNumber: 9
+                lineNumber: 59,
+                columnNumber: 20
             }, undefined),
             creategc && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "fixed inset-0 bg-black opacity-[88%] z-40"
             }, void 0, false, {
                 fileName: "src/components/Chat/AllChats.jsx",
-                lineNumber: 88,
-                columnNumber: 9
+                lineNumber: 65,
+                columnNumber: 20
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(AllChats, "SujOEMYIzB+iyvTfHJCctflS/VY=");
+_s(AllChats, "87yoWstOOD14cYYejmrJehIeciI=");
 _c = AllChats;
 exports.default = AllChats;
 var _c;
@@ -40644,34 +40654,35 @@ var _userContext = require("../../utils/userContext");
 var _s = $RefreshSig$();
 const ChatUserCard = ({ groupChat, data, idx })=>{
     _s();
-    const { searchuserId, setsearchuserId, token, setAllchats, setactiveChat, activeChat, chatData, setchatData } = (0, _react.useContext)((0, _userContext.userContext));
+    const { searchuserId, setsearchuserId, token, setAllchats, setactiveChat, activeChat, chatData, setchatData, isVisible, setisVisible } = (0, _react.useContext)((0, _userContext.userContext));
     // console.log(data);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
         onClick: ()=>{
             setactiveChat(data._id);
             setchatData(data);
+            setisVisible(!isVisible);
         },
         className: `border-2 px-2 py-2 rounded-md w-full text-left transition-all duration-300 ${data._id == activeChat ? "bg-black text-white hover:bg-black hover:text-white" : " hover:bg-black hover:text-white"}`,
         children: groupChat == true ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _groupchatCardDefault.default), {
             data: data
         }, void 0, false, {
             fileName: "src/components/Chat/ChatUserCard.jsx",
-            lineNumber: 33,
-            columnNumber: 9
+            lineNumber: 30,
+            columnNumber: 28
         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _onetooneCardDefault.default), {
             data: data
         }, void 0, false, {
             fileName: "src/components/Chat/ChatUserCard.jsx",
-            lineNumber: 35,
-            columnNumber: 9
+            lineNumber: 30,
+            columnNumber: 60
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Chat/ChatUserCard.jsx",
-        lineNumber: 20,
-        columnNumber: 5
+        lineNumber: 24,
+        columnNumber: 10
     }, undefined);
 };
-_s(ChatUserCard, "n6Q93OBhffcCygIAFEXH/zpqamU=");
+_s(ChatUserCard, "vceqeIKTyofKP4haddAAP2PvFqo=");
 _c = ChatUserCard;
 exports.default = ChatUserCard;
 var _c;
@@ -40706,37 +40717,42 @@ const GroupchatCard = ({ data })=>{
                 children: name
             }, void 0, false, {
                 fileName: "src/components/Chat/groupchatCard.jsx",
-                lineNumber: 9,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "flex text-[0.8em]",
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        children: latestMessage?.sender?.name
-                    }, void 0, false, {
+                        children: [
+                            latestMessage?.sender?.name,
+                            latestMessage?.sender?.name && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                children: "\xa0:\xa0"
+                            }, void 0, false)
+                        ]
+                    }, void 0, true, {
                         fileName: "src/components/Chat/groupchatCard.jsx",
-                        lineNumber: 11,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: latestMessage?.content
                     }, void 0, false, {
                         fileName: "src/components/Chat/groupchatCard.jsx",
-                        lineNumber: 12,
+                        lineNumber: 19,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Chat/groupchatCard.jsx",
-                lineNumber: 10,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Chat/groupchatCard.jsx",
-        lineNumber: 8,
-        columnNumber: 5
+        lineNumber: 12,
+        columnNumber: 10
     }, undefined);
 };
 _c = GroupchatCard;
@@ -40768,44 +40784,49 @@ const OnetooneCard = ({ data })=>{
     if (users) {
         const name = users[1].name;
         return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "flex flex-col",
+            className: "flex flex-col gap-y-1",
             children: [
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                     className: "text-[1em]",
                     children: name
                 }, void 0, false, {
                     fileName: "src/components/Chat/onetooneCard.jsx",
-                    lineNumber: 12,
+                    lineNumber: 16,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "flex text-[0.8em]",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                            children: latestMessage?.sender?.name
-                        }, void 0, false, {
+                            children: [
+                                latestMessage?.sender?.name,
+                                latestMessage?.sender?.name && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+                                    children: "\xa0:\xa0"
+                                }, void 0, false)
+                            ]
+                        }, void 0, true, {
                             fileName: "src/components/Chat/onetooneCard.jsx",
-                            lineNumber: 14,
+                            lineNumber: 18,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: latestMessage?.content
                         }, void 0, false, {
                             fileName: "src/components/Chat/onetooneCard.jsx",
-                            lineNumber: 15,
+                            lineNumber: 22,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Chat/onetooneCard.jsx",
-                    lineNumber: 13,
+                    lineNumber: 17,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Chat/onetooneCard.jsx",
-            lineNumber: 11,
-            columnNumber: 7
+            lineNumber: 15,
+            columnNumber: 12
         }, undefined);
     }
 };
@@ -40852,20 +40873,21 @@ const CreateGc = ({ setcreatgc })=>{
             }
         }).then((response)=>{
             setSearchUsers(response.data);
-        }).catch((err)=>{
-            console.log(err.message);
-        });
+        }).catch((err)=>{});
     }, [
         gcUserSearch
     ]);
     const clickHandler = async ()=>{
         const users = gcUsers.map((element)=>element._id);
+        if (users.length < 3) {
+            alert("Minimum of 3 users must be maintained");
+            return; // Return the previous state
+        }
         const formdata = {
             name: gcName,
             users: users
         };
         const finaldata = JSON.stringify(formdata);
-        console.log(finaldata);
         try {
             const response = await (0, _axiosDefault.default).post("http://localhost:5000/api/chat/group", finaldata, {
                 headers: {
@@ -40873,21 +40895,14 @@ const CreateGc = ({ setcreatgc })=>{
                     Authorization: `Bearer ${token}`
                 }
             });
-            console.log(response.data);
             setAllchats([
                 response.data.fullChat,
                 ...allChats
             ]);
             setactiveChat(response.data.fullChat._id);
             setchatData(response.data.fullChat);
-            console.log(allChats);
             setcreatgc(false);
-        } catch (error) {
-            console.log(error.message);
-            res.status(404).json({
-                msg: "Chat cannot be created"
-            });
-        }
+        } catch (error) {}
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -40901,7 +40916,7 @@ const CreateGc = ({ setcreatgc })=>{
                             children: "Create Group Chat"
                         }, void 0, false, {
                             fileName: "src/components/Chat/CreateGc.jsx",
-                            lineNumber: 67,
+                            lineNumber: 57,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -40912,7 +40927,7 @@ const CreateGc = ({ setcreatgc })=>{
                             onChange: (e)=>setGcName(e.target.value)
                         }, void 0, false, {
                             fileName: "src/components/Chat/CreateGc.jsx",
-                            lineNumber: 68,
+                            lineNumber: 58,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -40926,11 +40941,11 @@ const CreateGc = ({ setcreatgc })=>{
                             }
                         }, void 0, false, {
                             fileName: "src/components/Chat/CreateGc.jsx",
-                            lineNumber: 75,
+                            lineNumber: 59,
                             columnNumber: 11
                         }, undefined),
                         toggle && searchUsers.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "w-[98%] md:w-[70%] max-h-60 overflow-y-auto hide-scrollbar border-2 border-black rounded-md mt-2",
+                            className: "w-[95%]  max-h-60 overflow-y-auto hide-scrollbar border-2 border-black rounded-md mt-2",
                             children: searchUsers.map((val, idx)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                     className: "w-full border-b border-black bg-slate-50 py-2 text-left hover:bg-green-400 transition-all duration-200 hover:border-white",
                                     onClick: ()=>{
@@ -40949,53 +40964,62 @@ const CreateGc = ({ setcreatgc })=>{
                                         setGcUserSearch("");
                                     },
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "flex gap-x-3 items-center px-2",
+                                        className: "flex md:gap-x-2 items-center px-2",
                                         children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _avatarDefault.default), {
-                                                name: val.name
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "flex-shrink-0",
+                                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _avatarDefault.default), {
+                                                    name: val.name
+                                                }, void 0, false, {
+                                                    fileName: "src/components/Chat/CreateGc.jsx",
+                                                    lineNumber: 75,
+                                                    columnNumber: 23
+                                                }, undefined)
                                             }, void 0, false, {
                                                 fileName: "src/components/Chat/CreateGc.jsx",
-                                                lineNumber: 107,
+                                                lineNumber: 74,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "flex-col gap-y-2",
+                                                className: "flex flex-col",
                                                 children: [
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                        className: "break-words",
                                                         children: val.name
                                                     }, void 0, false, {
                                                         fileName: "src/components/Chat/CreateGc.jsx",
-                                                        lineNumber: 109,
+                                                        lineNumber: 79,
                                                         columnNumber: 23
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                                                        className: "max-w-[99%] break-words",
                                                         children: val.email
                                                     }, void 0, false, {
                                                         fileName: "src/components/Chat/CreateGc.jsx",
-                                                        lineNumber: 110,
+                                                        lineNumber: 80,
                                                         columnNumber: 23
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Chat/CreateGc.jsx",
-                                                lineNumber: 108,
+                                                lineNumber: 78,
                                                 columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Chat/CreateGc.jsx",
-                                        lineNumber: 106,
+                                        lineNumber: 73,
                                         columnNumber: 19
                                     }, undefined)
                                 }, idx, false, {
                                     fileName: "src/components/Chat/CreateGc.jsx",
-                                    lineNumber: 89,
-                                    columnNumber: 17
+                                    lineNumber: 65,
+                                    columnNumber: 46
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/components/Chat/CreateGc.jsx",
-                            lineNumber: 87,
-                            columnNumber: 13
+                            lineNumber: 64,
+                            columnNumber: 48
                         }, undefined),
                         gcUsers.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "flex flex-wrap items-center w-[70%] gap-x-1 gap-y-2",
@@ -41008,7 +41032,7 @@ const CreateGc = ({ setcreatgc })=>{
                                             children: val.name
                                         }, void 0, false, {
                                             fileName: "src/components/Chat/CreateGc.jsx",
-                                            lineNumber: 123,
+                                            lineNumber: 89,
                                             columnNumber: 21
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -41018,20 +41042,20 @@ const CreateGc = ({ setcreatgc })=>{
                                             children: "\u2716"
                                         }, void 0, false, {
                                             fileName: "src/components/Chat/CreateGc.jsx",
-                                            lineNumber: 124,
+                                            lineNumber: 90,
                                             columnNumber: 21
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Chat/CreateGc.jsx",
-                                    lineNumber: 122,
-                                    columnNumber: 19
+                                    lineNumber: 88,
+                                    columnNumber: 20
                                 }, undefined);
                             })
                         }, void 0, false, {
                             fileName: "src/components/Chat/CreateGc.jsx",
-                            lineNumber: 119,
-                            columnNumber: 13
+                            lineNumber: 86,
+                            columnNumber: 34
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             className: " text-white bg-black rounded-md px-3 py-2 text-sm transform-cpu duration-300 active:scale-75",
@@ -41039,13 +41063,13 @@ const CreateGc = ({ setcreatgc })=>{
                             children: "Create Chat"
                         }, void 0, false, {
                             fileName: "src/components/Chat/CreateGc.jsx",
-                            lineNumber: 139,
+                            lineNumber: 99,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Chat/CreateGc.jsx",
-                    lineNumber: 66,
+                    lineNumber: 56,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -41057,18 +41081,18 @@ const CreateGc = ({ setcreatgc })=>{
                     children: "\u2716"
                 }, void 0, false, {
                     fileName: "src/components/Chat/CreateGc.jsx",
-                    lineNumber: 146,
+                    lineNumber: 103,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Chat/CreateGc.jsx",
-            lineNumber: 65,
+            lineNumber: 55,
             columnNumber: 7
         }, undefined)
     }, void 0, false);
 };
-_s(CreateGc, "KRQa8bjgsukZrXnu/7wZaKsiXXk=");
+_s(CreateGc, "unus+hRY7rKxFB06otOX1DSYdmE=");
 _c = CreateGc;
 exports.default = CreateGc;
 var _c;
@@ -41123,7 +41147,7 @@ const SendMessage = ({ chatName, groupAdmin, users, _id })=>{
                                     children: "\uD83D\uDD0D"
                                 }, void 0, false, {
                                     fileName: "src/components/Chat/SendMessage.jsx",
-                                    lineNumber: 22,
+                                    lineNumber: 30,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -41131,7 +41155,7 @@ const SendMessage = ({ chatName, groupAdmin, users, _id })=>{
                                     children: groupChat ? chatData.chatName : (0, _getSenderJsDefault.default)(chatData.users)
                                 }, void 0, false, {
                                     fileName: "src/components/Chat/SendMessage.jsx",
-                                    lineNumber: 28,
+                                    lineNumber: 33,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -41140,13 +41164,13 @@ const SendMessage = ({ chatName, groupAdmin, users, _id })=>{
                                     children: "\uD83D\uDC41\uFE0F\u200D\uD83D\uDDE8\uFE0F"
                                 }, void 0, false, {
                                     fileName: "src/components/Chat/SendMessage.jsx",
-                                    lineNumber: 32,
+                                    lineNumber: 37,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Chat/SendMessage.jsx",
-                            lineNumber: 21,
+                            lineNumber: 29,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41164,7 +41188,7 @@ const SendMessage = ({ chatName, groupAdmin, users, _id })=>{
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Chat/SendMessage.jsx",
-                    lineNumber: 20,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, undefined),
                 tgProfile && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
@@ -41175,15 +41199,16 @@ const SendMessage = ({ chatName, groupAdmin, users, _id })=>{
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "relative",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _profileModalJsxDefault.default), {
-                                        ...chatData.users[idx]
+                                        ...chatData.users[idx],
+                                        data: chatData
                                     }, void 0, false, {
                                         fileName: "src/components/Chat/SendMessage.jsx",
-                                        lineNumber: 54,
+                                        lineNumber: 49,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Chat/SendMessage.jsx",
-                                    lineNumber: 53,
+                                    lineNumber: 48,
                                     columnNumber: 15
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41193,25 +41218,25 @@ const SendMessage = ({ chatName, groupAdmin, users, _id })=>{
                                         children: "\u274C"
                                     }, void 0, false, {
                                         fileName: "src/components/Chat/SendMessage.jsx",
-                                        lineNumber: 58,
+                                        lineNumber: 53,
                                         columnNumber: 17
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/components/Chat/SendMessage.jsx",
-                                    lineNumber: 57,
+                                    lineNumber: 52,
                                     columnNumber: 15
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Chat/SendMessage.jsx",
-                            lineNumber: 48,
+                            lineNumber: 47,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "fixed inset-0 bg-black opacity-80 z-40 "
                         }, void 0, false, {
                             fileName: "src/components/Chat/SendMessage.jsx",
-                            lineNumber: 62,
+                            lineNumber: 57,
                             columnNumber: 13
                         }, undefined)
                     ]
@@ -41225,19 +41250,19 @@ const SendMessage = ({ chatName, groupAdmin, users, _id })=>{
                                 setgcProfile: setgcProfile
                             }, void 0, false, {
                                 fileName: "src/components/Chat/SendMessage.jsx",
-                                lineNumber: 73,
+                                lineNumber: 62,
                                 columnNumber: 15
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/components/Chat/SendMessage.jsx",
-                            lineNumber: 68,
+                            lineNumber: 61,
                             columnNumber: 13
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "fixed inset-0 bg-black opacity-80 z-40 "
                         }, void 0, false, {
                             fileName: "src/components/Chat/SendMessage.jsx",
-                            lineNumber: 76,
+                            lineNumber: 65,
                             columnNumber: 13
                         }, undefined)
                     ]
@@ -41250,16 +41275,16 @@ const SendMessage = ({ chatName, groupAdmin, users, _id })=>{
             children: "Select a chat or Create a chat"
         }, void 0, false, {
             fileName: "src/components/Chat/SendMessage.jsx",
-            lineNumber: 84,
+            lineNumber: 70,
             columnNumber: 9
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Chat/SendMessage.jsx",
-        lineNumber: 83,
-        columnNumber: 7
+        lineNumber: 69,
+        columnNumber: 12
     }, undefined);
 };
-_s(SendMessage, "aCksq7OCSpWCpR+oBMAj/hOHg4E=");
+_s(SendMessage, "tPFIfspJQ4LILHbQrMrlbYYT+TI=");
 _c = SendMessage;
 exports.default = SendMessage;
 var _c;
@@ -41303,7 +41328,7 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
     _s();
     const [gcUsers, setGcUsers] = (0, _react.useState)(users);
     const [gcUserSearch, setGcUserSearch] = (0, _react.useState)(null);
-    const { token, allChats, setAllchats, chatData, setchatData } = (0, _react.useContext)((0, _userContext.userContext));
+    const { token, allChats, setAllchats, chatData, setchatData, activeChat, setactiveChat } = (0, _react.useContext)((0, _userContext.userContext));
     const [searchUsers, setSearchUsers] = (0, _react.useState)([]);
     const [toggle, settoggle] = (0, _react.useState)(false);
     const [name, setName] = (0, _react.useState)(null);
@@ -41313,11 +41338,8 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
                 Authorization: `Bearer ${token}`
             }
         }).then((response)=>{
-            console.log(response.data);
             setSearchUsers(response.data);
-        }).catch((err)=>{
-            console.log(err.message);
-        });
+        }).catch((err)=>{});
     }, [
         gcUserSearch
     ]);
@@ -41327,7 +41349,6 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
             updatedName: name
         };
         const formdata = JSON.stringify(data);
-        console.log(formdata);
         const response = await (0, _axiosDefault.default).put("http://localhost:5000/api/chat/rename", formdata, {
             headers: {
                 "Content-Type": "application/json",
@@ -41344,7 +41365,6 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
             ...chatData,
             chatName: response.data.chatName
         });
-        console.log(chatData);
     };
     const removeUsers = async (userid, updatedusers, grpAdmin)=>{
         const data = {
@@ -41358,14 +41378,11 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
                 Authorization: `Bearer ${token}`
             }
         });
-        console.log(grpAdmin);
         if (grpAdmin) setAllchats((chat)=>{
             return chat.filter((chat)=>chat._id !== _id);
         });
     };
-    (0, _react.useEffect)(()=>{
-        console.log(allChats);
-    }, [
+    (0, _react.useEffect)(()=>{}, [
         allChats
     ]);
     const addUser = async (id)=>{
@@ -41374,47 +41391,51 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
             chatId: _id
         };
         const formdata = JSON.stringify(data);
-        console.log(formdata);
         const response = await (0, _axiosDefault.default).put("http://localhost:5000/api/chat/groupadd", formdata, {
             headers: {
                 "Content-Type": "application/json",
                 Authorization: `Bearer ${token}`
             }
         });
-        console.log(response);
     };
     const leaveGrp = async ()=>{
         const user = JSON.parse(localStorage.getItem("userInfo"));
         const grpAdmin = true;
         removeUsers(user._id, null, grpAdmin);
-        setchatData(null);
+        if (activeChat === allChats[0]._id) {
+            setchatData(allChats[1]);
+            setactiveChat(allChats[1]._id);
+        } else {
+            setchatData(allChats[0]);
+            setactiveChat(allChats[0]._id);
+        }
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "w-[40vw] bg-slate-200 rounded-lg text-center relative",
+                className: "w-[80vw] md:w-[40vw] bg-slate-200 rounded-lg text-center relative",
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "flex flex-col justify-center items-center gap-y-6 px-3 py-4 w-[90%] mx-auto text-center",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            className: "text-3xl",
+                            className: "text-xl md:text-3xl",
                             children: chatName
                         }, void 0, false, {
                             fileName: "src/components/Chat/GcModal.jsx",
-                            lineNumber: 124,
+                            lineNumber: 106,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "flex flex-wrap items-center gap-3 ",
                             children: gcUsers.map((user)=>{
                                 return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: " flex  px-2 gap-x-3 py-[2px]  text-sm  rounded-md bg-black text-white text-[0.9em]",
+                                    className: " flex  px-2 gap-x-3 py-[2px] rounded-md bg-black text-white text-[0.7em] md:text-[0.9em]",
                                     children: [
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                             children: user.name
                                         }, void 0, false, {
                                             fileName: "src/components/Chat/GcModal.jsx",
-                                            lineNumber: 129,
+                                            lineNumber: 110,
                                             columnNumber: 19
                                         }, undefined),
                                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -41433,23 +41454,23 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
                                             children: "\u2716"
                                         }, void 0, false, {
                                             fileName: "src/components/Chat/GcModal.jsx",
-                                            lineNumber: 130,
+                                            lineNumber: 111,
                                             columnNumber: 19
                                         }, undefined)
                                     ]
                                 }, void 0, true, {
                                     fileName: "src/components/Chat/GcModal.jsx",
-                                    lineNumber: 128,
-                                    columnNumber: 17
+                                    lineNumber: 109,
+                                    columnNumber: 20
                                 }, undefined);
                             })
                         }, void 0, false, {
                             fileName: "src/components/Chat/GcModal.jsx",
-                            lineNumber: 125,
+                            lineNumber: 107,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "flex gap-x-4 text-[0.9em] w-full items-center justify-center text-center ",
+                            className: "flex gap-x-4 text-[0.7em] md:text-[0.9em] w-full items-center justify-center text-center ",
                             children: [
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                     type: "text",
@@ -41459,7 +41480,7 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
                                     onChange: (e)=>setName(e.target.value)
                                 }, void 0, false, {
                                     fileName: "src/components/Chat/GcModal.jsx",
-                                    lineNumber: 155,
+                                    lineNumber: 130,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -41468,13 +41489,13 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
                                     children: "Update"
                                 }, void 0, false, {
                                     fileName: "src/components/Chat/GcModal.jsx",
-                                    lineNumber: 162,
+                                    lineNumber: 131,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/components/Chat/GcModal.jsx",
-                            lineNumber: 154,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -41488,7 +41509,7 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
                             }
                         }, void 0, false, {
                             fileName: "src/components/Chat/GcModal.jsx",
-                            lineNumber: 169,
+                            lineNumber: 135,
                             columnNumber: 11
                         }, undefined),
                         toggle && searchUsers.length > 0 && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41518,7 +41539,7 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
                                                 name: val.name
                                             }, void 0, false, {
                                                 fileName: "src/components/Chat/GcModal.jsx",
-                                                lineNumber: 202,
+                                                lineNumber: 151,
                                                 columnNumber: 21
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41528,59 +41549,59 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
                                                         children: val.name
                                                     }, void 0, false, {
                                                         fileName: "src/components/Chat/GcModal.jsx",
-                                                        lineNumber: 204,
+                                                        lineNumber: 153,
                                                         columnNumber: 23
                                                     }, undefined),
                                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                                                         children: val.email
                                                     }, void 0, false, {
                                                         fileName: "src/components/Chat/GcModal.jsx",
-                                                        lineNumber: 205,
+                                                        lineNumber: 154,
                                                         columnNumber: 23
                                                     }, undefined)
                                                 ]
                                             }, void 0, true, {
                                                 fileName: "src/components/Chat/GcModal.jsx",
-                                                lineNumber: 203,
+                                                lineNumber: 152,
                                                 columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/components/Chat/GcModal.jsx",
-                                        lineNumber: 201,
+                                        lineNumber: 150,
                                         columnNumber: 19
                                     }, undefined)
                                 }, idx, false, {
                                     fileName: "src/components/Chat/GcModal.jsx",
-                                    lineNumber: 183,
-                                    columnNumber: 17
+                                    lineNumber: 141,
+                                    columnNumber: 46
                                 }, undefined))
                         }, void 0, false, {
                             fileName: "src/components/Chat/GcModal.jsx",
-                            lineNumber: 181,
-                            columnNumber: 13
+                            lineNumber: 140,
+                            columnNumber: 48
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                             onClick: ()=>{
                                 leaveGrp();
                                 setgcProfile(false);
                             },
-                            className: "bg-black text-white px-2 py-1 rounded-md transform-cpu duration-300 active:scale-75",
+                            className: "bg-black text-white px-2 py-1 rounded-md transform-cpu duration-300 active:scale-75 text-[0.7em] md:text-[0.9em]",
                             children: "Leave Group"
                         }, void 0, false, {
                             fileName: "src/components/Chat/GcModal.jsx",
-                            lineNumber: 213,
+                            lineNumber: 160,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Chat/GcModal.jsx",
-                    lineNumber: 123,
+                    lineNumber: 105,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Chat/GcModal.jsx",
-                lineNumber: 122,
+                lineNumber: 104,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41591,18 +41612,18 @@ const GcModal = ({ chatName, users, groupAdmin, _id, setgcProfile })=>{
                     children: "\u2716"
                 }, void 0, false, {
                     fileName: "src/components/Chat/GcModal.jsx",
-                    lineNumber: 225,
+                    lineNumber: 169,
                     columnNumber: 9
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/components/Chat/GcModal.jsx",
-                lineNumber: 224,
+                lineNumber: 168,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true);
 };
-_s(GcModal, "uBsS9tP7rPS6fstmQgEcjZNOy8s=");
+_s(GcModal, "QXZkSzr15xaFEajd0ZGkKvo13s8=");
 _c = GcModal;
 exports.default = GcModal;
 var _c;
@@ -41642,7 +41663,7 @@ let socket;
 let selectedChatCompare;
 const MessageBox = ()=>{
     _s();
-    const { token, activeChat } = (0, _react.useContext)((0, _userContext.userContext));
+    const { token, activeChat, chatData, notifications, setNotifications } = (0, _react.useContext)((0, _userContext.userContext));
     const user = JSON.parse(localStorage.getItem("userInfo"));
     const loggedinUser = user._id;
     const [allMsg, setallMsgs] = (0, _react.useState)([]);
@@ -41650,6 +41671,25 @@ const MessageBox = ()=>{
     const [typing, setTyping] = (0, _react.useState)(false);
     const [istyping, setIsTyping] = (0, _react.useState)(false);
     const [socketconnected, setsocketconnected] = (0, _react.useState)(false);
+    const notificationHandler = async (newMessageRecieved)=>{
+        try {
+            const { data } = await (0, _axiosDefault.default).get(`http://localhost:5000/api/chat/${newMessageRecieved.chat._id}`, {
+                headers: {
+                    Authorization: `Bearer ${token}`
+                }
+            });
+            const { _id, latestMessage } = data;
+            const newNotification = {
+                activechatId: _id,
+                chatdata: data,
+                name: latestMessage.sender.name
+            };
+            setNotifications((prevNotifications)=>[
+                    newNotification,
+                    ...prevNotifications
+                ]);
+        } catch  {}
+    };
     (0, _react.useEffect)(()=>{
         socket = (0, _socketIoClientDefault.default)(ENDPOINT);
         socket.emit("setup", user);
@@ -41657,12 +41697,10 @@ const MessageBox = ()=>{
         socket.on("typing", ()=>setIsTyping(true));
         socket.on("stop typing", ()=>{
             setIsTyping(false);
-            console.log(istyping);
         });
         socket.on("message recieved", (newMessageRecieved)=>{
-            if (!selectedChatCompare || selectedChatCompare !== newMessageRecieved.chat._id) ;
+            if (!selectedChatCompare || selectedChatCompare !== newMessageRecieved.chat._id) notificationHandler(newMessageRecieved);
             else {
-                console.log("msg received");
                 setallMsgs((prevMsgs)=>[
                         ...prevMsgs,
                         newMessageRecieved
@@ -41687,7 +41725,7 @@ const MessageBox = ()=>{
             setallMsgs(response.data);
             selectedChatCompare = activeChat;
             socket.emit("joinChat", activeChat);
-        }).catch((error)=>console.log(error.message));
+        }).catch((error)=>void 0);
     }, [
         activeChat
     ]);
@@ -41710,7 +41748,7 @@ const MessageBox = ()=>{
                         ...prevMsgs,
                         response.data
                     ]);
-            }).catch((error)=>console.log(error.message));
+            }).catch((error)=>void 0);
         }
     };
     const handleKeyDown = (event)=>{
@@ -41722,7 +41760,7 @@ const MessageBox = ()=>{
     let typingTimeout; // Declare this outside the component
     const typingHandler = ()=>{
         if (!socketconnected) return;
-        if (!typing) {
+        if (!typing && selectedChatCompare === activeChat) {
             setTyping(true);
             socket.emit("typing", activeChat);
         }
@@ -41761,8 +41799,8 @@ const MessageBox = ()=>{
                             minutes: minutes
                         }, void 0, false, {
                             fileName: "src/components/Chat/MessageBox.jsx",
-                            lineNumber: 152,
-                            columnNumber: 19
+                            lineNumber: 149,
+                            columnNumber: 48
                         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _recieverCardJsxDefault.default), {
                             content: content,
                             ...sender,
@@ -41770,13 +41808,13 @@ const MessageBox = ()=>{
                             minutes: minutes
                         }, void 0, false, {
                             fileName: "src/components/Chat/MessageBox.jsx",
-                            lineNumber: 158,
-                            columnNumber: 19
+                            lineNumber: 149,
+                            columnNumber: 115
                         }, undefined)
                     }, idx, false, {
                         fileName: "src/components/Chat/MessageBox.jsx",
-                        lineNumber: 140,
-                        columnNumber: 15
+                        lineNumber: 142,
+                        columnNumber: 16
                     }, undefined);
                 })
             }, void 0, false, {
@@ -41796,8 +41834,8 @@ const MessageBox = ()=>{
                                 className: "w-12 h-9 absolute bottom-12 py-1"
                             }, void 0, false, {
                                 fileName: "src/components/Chat/MessageBox.jsx",
-                                lineNumber: 172,
-                                columnNumber: 13
+                                lineNumber: 155,
+                                columnNumber: 24
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
                                 type: "text",
@@ -41807,7 +41845,6 @@ const MessageBox = ()=>{
                                 value: msg,
                                 onChange: (e)=>{
                                     setMsg(e.target.value);
-                                    console.log(e.target.value);
                                     typingHandler();
                                 },
                                 onKeyDown: (e)=>{
@@ -41815,13 +41852,13 @@ const MessageBox = ()=>{
                                 }
                             }, void 0, false, {
                                 fileName: "src/components/Chat/MessageBox.jsx",
-                                lineNumber: 178,
+                                lineNumber: 156,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Chat/MessageBox.jsx",
-                        lineNumber: 170,
+                        lineNumber: 154,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -41830,23 +41867,23 @@ const MessageBox = ()=>{
                         children: "\u27A4"
                     }, void 0, false, {
                         fileName: "src/components/Chat/MessageBox.jsx",
-                        lineNumber: 195,
+                        lineNumber: 164,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Chat/MessageBox.jsx",
-                lineNumber: 169,
+                lineNumber: 153,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Chat/MessageBox.jsx",
-        lineNumber: 128,
-        columnNumber: 5
+        lineNumber: 131,
+        columnNumber: 10
     }, undefined);
 };
-_s(MessageBox, "o9sNMb928Wm0lz6WiX2kpQVKELI=");
+_s(MessageBox, "LKe+ygMzdDTQ+6GP9sSmLBnNPMM=");
 _c = MessageBox;
 exports.default = MessageBox;
 var _c;
@@ -41883,7 +41920,7 @@ const SenderCard = ({ content, hours, minutes })=>{
                     children: content
                 }, void 0, false, {
                     fileName: "src/components/Chat/SenderCard.jsx",
-                    lineNumber: 7,
+                    lineNumber: 9,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -41895,19 +41932,19 @@ const SenderCard = ({ content, hours, minutes })=>{
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Chat/SenderCard.jsx",
-                    lineNumber: 13,
+                    lineNumber: 14,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/components/Chat/SenderCard.jsx",
-            lineNumber: 6,
+            lineNumber: 8,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Chat/SenderCard.jsx",
-        lineNumber: 5,
-        columnNumber: 5
+        lineNumber: 7,
+        columnNumber: 10
     }, undefined);
 };
 _c = SenderCard;
@@ -41945,7 +41982,7 @@ const RecieverCard = ({ content, profilePic, name, hours, minutes })=>{
                         className: "w-6 h-6"
                     }, void 0, false, {
                         fileName: "src/components/Chat/RecieverCard.jsx",
-                        lineNumber: 7,
+                        lineNumber: 11,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -41953,13 +41990,13 @@ const RecieverCard = ({ content, profilePic, name, hours, minutes })=>{
                         children: name
                     }, void 0, false, {
                         fileName: "src/components/Chat/RecieverCard.jsx",
-                        lineNumber: 8,
+                        lineNumber: 12,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Chat/RecieverCard.jsx",
-                lineNumber: 6,
+                lineNumber: 10,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41973,7 +42010,7 @@ const RecieverCard = ({ content, profilePic, name, hours, minutes })=>{
                         children: content
                     }, void 0, false, {
                         fileName: "src/components/Chat/RecieverCard.jsx",
-                        lineNumber: 11,
+                        lineNumber: 15,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -41985,20 +42022,20 @@ const RecieverCard = ({ content, profilePic, name, hours, minutes })=>{
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Chat/RecieverCard.jsx",
-                        lineNumber: 17,
+                        lineNumber: 20,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Chat/RecieverCard.jsx",
-                lineNumber: 10,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/components/Chat/RecieverCard.jsx",
-        lineNumber: 5,
-        columnNumber: 5
+        lineNumber: 9,
+        columnNumber: 10
     }, undefined);
 };
 _c = RecieverCard;
@@ -45475,6 +45512,43 @@ function Backoff(opts) {
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jSo45":[function(require,module,exports) {
 module.exports = require("eff16e07b0aafb76").getBundleURL("aXMci") + "typinganimation.9a05d9b6.gif" + "?" + Date.now();
 
-},{"eff16e07b0aafb76":"lgJ39"}]},["9wh9R","1xC6H","2kQhy"], "2kQhy", "parcelRequire10c2")
+},{"eff16e07b0aafb76":"lgJ39"}],"b6oIK":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$a480 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$a480.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+const Error = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+            children: "Something Went Wrong Please Try Again"
+        }, void 0, false, {
+            fileName: "src/components/Chat/Error.jsx",
+            lineNumber: 4,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/components/Chat/Error.jsx",
+        lineNumber: 3,
+        columnNumber: 10
+    }, undefined);
+};
+_c = Error;
+exports.default = Error;
+var _c;
+$RefreshReg$(_c, "Error");
+
+  $parcel$ReactRefreshHelpers$a480.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}]},["9wh9R","1xC6H","2kQhy"], "2kQhy", "parcelRequire10c2")
 
 //# sourceMappingURL=index.7271efb6.js.map

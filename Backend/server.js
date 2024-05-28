@@ -12,15 +12,17 @@ dotenv.config();
 connectDB();
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "http://localhost:1234" }));
+app.use(cors());
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Api is Running");
 });
 
 app.use("/api/users", userRoute);
 app.use("/api/chat", chatRoute);
 app.use("/api/messages", messageRoute);
+
+require("./config/config.js");
 
 app.use(errorHandler);
 app.use(invalidUrl);
@@ -33,7 +35,7 @@ const server = app.listen(process.env.PORT || 5000, () => {
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:1234",
+    origin: "*",
   },
 });
 
