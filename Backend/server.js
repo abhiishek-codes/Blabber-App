@@ -22,6 +22,7 @@ app.use("/api/users", userRoute);
 app.use("/api/chat", chatRoute);
 app.use("/api/messages", messageRoute);
 
+//to remeove console logs
 require("./config/config.js");
 
 app.use(errorHandler);
