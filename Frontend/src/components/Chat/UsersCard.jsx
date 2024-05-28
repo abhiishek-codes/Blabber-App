@@ -58,10 +58,17 @@ const UsersCard = ({ name, email, _id, setsbar, idx, data }) => {
       }}
     >
       <div className="flex gap-x-3 items-center px-2">
-        <Avatar name={name} />
-        <div className="flex-col gap-y-2">
-          <h1>{name}</h1>
-          <h1>{email}</h1>
+        <div className="flex-shrink-0">
+          <Avatar name={name} />
+        </div>
+
+        <div className="flex-col gap-y-2 max-w-[98%] ">
+          <h1 style={{ wordBreak: "break-word", overflowWrap: "break-word" }}>
+            {name}
+          </h1>
+          <h1 style={{ wordBreak: "break-word", overflowWrap: "break-word" }}>
+            {email}
+          </h1>
         </div>
       </div>
     </button>

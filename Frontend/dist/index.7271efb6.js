@@ -2972,19 +2972,33 @@ var _errorJsxDefault = parcelHelpers.interopDefault(_errorJsx);
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContext.UserProvider), {
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 13,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
-                    fileName: "src/App.js",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "flex flex-col h-screen",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navbarDefault.default), {}, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 14,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "flex-1",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Outlet), {}, void 0, false, {
+                            fileName: "src/App.js",
+                            lineNumber: 16,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/App.js",
+                        lineNumber: 15,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/App.js",
+                lineNumber: 13,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
             fileName: "src/App.js",
             lineNumber: 12,
             columnNumber: 7
@@ -2996,12 +3010,12 @@ const Chatpage = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _userContext.UserProvider), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _chatPageDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 20,
+            lineNumber: 24,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.js",
-        lineNumber: 19,
+        lineNumber: 23,
         columnNumber: 10
     }, undefined);
 };
@@ -3011,12 +3025,12 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(App, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 25,
+            lineNumber: 29,
             columnNumber: 12
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsxDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 26,
+            lineNumber: 30,
             columnNumber: 17
         }, undefined),
         children: [
@@ -3024,7 +3038,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _homeDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 29,
+                    lineNumber: 33,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3032,7 +3046,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/signup",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginSignupDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 32,
+                    lineNumber: 36,
                     columnNumber: 14
                 }, undefined)
             },
@@ -3040,7 +3054,7 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
                 path: "/login",
                 element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _loginSignupDefault.default), {}, void 0, false, {
                     fileName: "src/App.js",
-                    lineNumber: 35,
+                    lineNumber: 39,
                     columnNumber: 14
                 }, undefined)
             }
@@ -3050,12 +3064,12 @@ const router = (0, _reactRouterDom.createBrowserRouter)([
         path: "/chats",
         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Chatpage, {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 39,
+            lineNumber: 43,
             columnNumber: 12
         }, undefined),
         errorElement: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _errorJsxDefault.default), {}, void 0, false, {
             fileName: "src/App.js",
-            lineNumber: 40,
+            lineNumber: 44,
             columnNumber: 17
         }, undefined)
     }
@@ -3065,7 +3079,7 @@ root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.RouterP
     router: router
 }, void 0, false, {
     fileName: "src/App.js",
-    lineNumber: 43,
+    lineNumber: 47,
     columnNumber: 13
 }, undefined));
 var _c, _c1;
@@ -34403,127 +34417,116 @@ var _home1Mp4Default = parcelHelpers.interopDefault(_home1Mp4);
 var _home2Mp4 = require("url:../assets/home2.mp4");
 var _home2Mp4Default = parcelHelpers.interopDefault(_home2Mp4);
 var _reactRouterDom = require("react-router-dom");
-var _userContext = require("../utils/userContext");
 var _waveSvg = require("../assets/wave.svg");
 var _waveSvgDefault = parcelHelpers.interopDefault(_waveSvg);
-var _s = $RefreshSig$();
 const Home = ()=>{
-    _s();
-    const { remainingHeight, setRemainingHeight } = (0, _react.useContext)((0, _userContext.userContext));
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _jsxDevRuntime.Fragment), {
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "bg-bgcolor h-full pt-2 md:pt-0 overflow-y-hidden",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: " bg-bgcolor my-auto pt-2 md:pt-0",
-            style: {
-                height: `${remainingHeight}px`
-            },
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "pt-2 mx-auto flex flex-col items-center justify-center gap-y-4 md:gap-y-4 text-white max-w-5xl",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        className: "text-3xl  md:text-5xl font-bold tracking-wide",
-                        children: "Blabber The Chat App"
-                    }, void 0, false, {
-                        fileName: "src/pages/Home.jsx",
-                        lineNumber: 18,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                        className: "text-md md:text-lg tracking-wide font-medium text-center px-4 pt-1",
-                        children: "Blabber Makes it easy and fun to stay in touch & communicate anywhere anyplace with anyone"
-                    }, void 0, false, {
-                        fileName: "src/pages/Home.jsx",
-                        lineNumber: 21,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex items-center justify-center w-full gap-x-2 overflow-hidden",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex-1 max-w-lg p-2 hidden md:block",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
-                                    loop: true,
-                                    autoPlay: true,
-                                    muted: true,
-                                    className: "w-full h-auto rounded-lg",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
-                                        src: (0, _home1Mp4Default.default),
-                                        HomeVideo: true,
-                                        type: "video/mp4"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Home.jsx",
-                                        lineNumber: 28,
-                                        columnNumber: 17
-                                    }, undefined)
+            className: "pt-2 mx-auto flex flex-col items-center justify-center gap-y-4 md:gap-y-6 text-white max-w-4xl",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    className: "text-3xl md:text-5xl font-bold tracking-wide",
+                    children: "Blabber The Chat App"
+                }, void 0, false, {
+                    fileName: "src/pages/Home.jsx",
+                    lineNumber: 9,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                    className: "text-md md:text-lg tracking-wide font-medium text-center px-4 pt-1",
+                    children: "Blabber Makes it easy and fun to stay in touch & communicate anywhere anyplace with anyone"
+                }, void 0, false, {
+                    fileName: "src/pages/Home.jsx",
+                    lineNumber: 12,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex items-center justify-center w-full gap-x-2 overflow-hidden flex-1",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex-1 max-w-lg p-2 hidden md:block",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+                                loop: true,
+                                autoPlay: true,
+                                muted: true,
+                                className: "w-full h-auto rounded-lg",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                                    src: (0, _home1Mp4Default.default),
+                                    type: "video/mp4"
                                 }, void 0, false, {
                                     fileName: "src/pages/Home.jsx",
-                                    lineNumber: 27,
+                                    lineNumber: 19,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/pages/Home.jsx",
-                                lineNumber: 26,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "flex-1 max-w-lg p-2",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
-                                    loop: true,
-                                    autoPlay: true,
-                                    muted: true,
-                                    className: "w-full h-auto rounded-lg",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
-                                        src: (0, _home2Mp4Default.default),
-                                        type: "video/mp4"
-                                    }, void 0, false, {
-                                        fileName: "src/pages/Home.jsx",
-                                        lineNumber: 33,
-                                        columnNumber: 17
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/pages/Home.jsx",
-                                    lineNumber: 32,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/pages/Home.jsx",
-                                lineNumber: 31,
+                                lineNumber: 18,
                                 columnNumber: 13
                             }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/pages/Home.jsx",
-                        lineNumber: 25,
-                        columnNumber: 11
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                        to: "/login",
-                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "bg-bgbutton px-10 py-2 rounded-sm transform-cpu active:scale-75 duration-300 tracking-wide text-black hover:bg-white hover:text-black font-[Mona]",
-                            children: "Start Journey"
                         }, void 0, false, {
                             fileName: "src/pages/Home.jsx",
-                            lineNumber: 39,
-                            columnNumber: 13
+                            lineNumber: 17,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "flex-1 max-w-lg p-2",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("video", {
+                                loop: true,
+                                autoPlay: true,
+                                muted: true,
+                                className: "w-full h-auto rounded-lg",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("source", {
+                                    src: (0, _home2Mp4Default.default),
+                                    type: "video/mp4"
+                                }, void 0, false, {
+                                    fileName: "src/pages/Home.jsx",
+                                    lineNumber: 24,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/pages/Home.jsx",
+                                lineNumber: 23,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/pages/Home.jsx",
+                            lineNumber: 22,
+                            columnNumber: 11
                         }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/pages/Home.jsx",
+                    lineNumber: 16,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                    to: "/login",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "bg-bgbutton px-10 py-2 rounded-sm transform-cpu active:scale-75 duration-300 tracking-wide text-black hover:bg-white hover:text-black font-[Mona]",
+                        children: "Start Journey"
                     }, void 0, false, {
                         fileName: "src/pages/Home.jsx",
-                        lineNumber: 38,
+                        lineNumber: 29,
                         columnNumber: 11
                     }, undefined)
-                ]
-            }, void 0, true, {
-                fileName: "src/pages/Home.jsx",
-                lineNumber: 17,
-                columnNumber: 9
-            }, undefined)
-        }, void 0, false, {
+                }, void 0, false, {
+                    fileName: "src/pages/Home.jsx",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
             fileName: "src/pages/Home.jsx",
-            lineNumber: 14,
+            lineNumber: 8,
             columnNumber: 7
         }, undefined)
-    }, void 0, false);
+    }, void 0, false, {
+        fileName: "src/pages/Home.jsx",
+        lineNumber: 7,
+        columnNumber: 10
+    }, undefined);
 };
-_s(Home, "AKOnckUxA9A0ml99JBQCI/CQF1Y=");
 _c = Home;
 exports.default = Home;
 var _c;
@@ -34534,7 +34537,7 @@ $RefreshReg$(_c, "Home");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","url:../assets/home1.mp4":"lVRE9","url:../assets/home2.mp4":"eUgoI","react-router-dom":"9xmpe","../utils/userContext":"eBA1b","../assets/wave.svg":"j7AqN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lVRE9":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","url:../assets/home1.mp4":"lVRE9","url:../assets/home2.mp4":"eUgoI","react-router-dom":"9xmpe","../assets/wave.svg":"j7AqN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lVRE9":[function(require,module,exports) {
 module.exports = require("95e63070bafcd845").getBundleURL("aXMci") + "home1.c1044912.mp4" + "?" + Date.now();
 
 },{"95e63070bafcd845":"lgJ39"}],"eUgoI":[function(require,module,exports) {
@@ -39454,7 +39457,7 @@ const Signup = ({ Setloginstate })=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-3xl text-center pb-4",
+                className: "text-2xl md:text-3xl text-center pb-4",
                 children: "Where great minds blabber"
             }, void 0, false, {
                 fileName: "src/components/Signup.jsx",
@@ -39462,11 +39465,11 @@ const Signup = ({ Setloginstate })=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                className: "text-2xl text-center pb-4",
+                className: "text-xl md:text-2xl text-center pb-4",
                 children: "Sign up today."
             }, void 0, false, {
                 fileName: "src/components/Signup.jsx",
-                lineNumber: 66,
+                lineNumber: 68,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39476,11 +39479,11 @@ const Signup = ({ Setloginstate })=>{
                         className: "px-1",
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                className: "block pb-1 px-1 text-[1.1rem]",
+                                className: "block pb-1 px-1 text-[0.9rem] md:text-[1.1rem]",
                                 children: "Name"
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 70,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -39492,7 +39495,7 @@ const Signup = ({ Setloginstate })=>{
                                 onChange: handleChange
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 71,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, undefined),
                             errors.map((error, index)=>error.field === "name" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39500,15 +39503,15 @@ const Signup = ({ Setloginstate })=>{
                                     children: error.message
                                 }, index, false, {
                                     fileName: "src/components/Signup.jsx",
-                                    lineNumber: 72,
+                                    lineNumber: 76,
                                     columnNumber: 67
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                className: "block pt-4 pb-1 px-1 text-[1.1rem]",
+                                className: "block pt-4 pb-1 px-1 text-[0.9rem]  md:text-[1.1rem]",
                                 children: "Username"
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 76,
+                                lineNumber: 80,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -39520,7 +39523,7 @@ const Signup = ({ Setloginstate })=>{
                                 onChange: handleChange
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 77,
+                                lineNumber: 83,
                                 columnNumber: 11
                             }, undefined),
                             errors.map((error, index)=>error.field === "uname" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39528,15 +39531,15 @@ const Signup = ({ Setloginstate })=>{
                                     children: error.message
                                 }, index, false, {
                                     fileName: "src/components/Signup.jsx",
-                                    lineNumber: 78,
+                                    lineNumber: 84,
                                     columnNumber: 68
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                className: "block pt-4 pb-1 px-1 text-[1.1rem]",
+                                className: "block pt-4 pb-1 px-1 text-[0.9rem] md:text-[1.1rem]",
                                 children: "Password"
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 82,
+                                lineNumber: 88,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39551,7 +39554,7 @@ const Signup = ({ Setloginstate })=>{
                                         onChange: handleChange
                                     }, void 0, false, {
                                         fileName: "src/components/Signup.jsx",
-                                        lineNumber: 84,
+                                        lineNumber: 92,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -39563,18 +39566,18 @@ const Signup = ({ Setloginstate })=>{
                                             alt: "Toggle visibility"
                                         }, void 0, false, {
                                             fileName: "src/components/Signup.jsx",
-                                            lineNumber: 86,
+                                            lineNumber: 94,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Signup.jsx",
-                                        lineNumber: 85,
+                                        lineNumber: 93,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 83,
+                                lineNumber: 91,
                                 columnNumber: 11
                             }, undefined),
                             errors.map((error, index)=>error.field === "pass" && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -39582,15 +39585,15 @@ const Signup = ({ Setloginstate })=>{
                                     children: error.message
                                 }, index, false, {
                                     fileName: "src/components/Signup.jsx",
-                                    lineNumber: 89,
+                                    lineNumber: 97,
                                     columnNumber: 67
                                 }, undefined)),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                                className: "block pt-4 pb-2 px-1 text-[1.1rem]",
+                                className: "block pt-4 pb-2 px-1 text-[0.9rem]  md:text-[1.1rem]",
                                 children: "Upload your profile picture"
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 93,
+                                lineNumber: 101,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
@@ -39601,13 +39604,13 @@ const Signup = ({ Setloginstate })=>{
                                 onChange: handleFileChange
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 96,
+                                lineNumber: 104,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Signup.jsx",
-                        lineNumber: 69,
+                        lineNumber: 71,
                         columnNumber: 9
                     }, undefined),
                     errors.map((error, index)=>!error.field && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39616,12 +39619,12 @@ const Signup = ({ Setloginstate })=>{
                                 children: error.message
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 99,
+                                lineNumber: 107,
                                 columnNumber: 17
                             }, undefined)
                         }, index, false, {
                             fileName: "src/components/Signup.jsx",
-                            lineNumber: 98,
+                            lineNumber: 106,
                             columnNumber: 55
                         }, undefined)),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -39633,7 +39636,7 @@ const Signup = ({ Setloginstate })=>{
                                 children: "Sign Up"
                             }, void 0, false, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 103,
+                                lineNumber: 111,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
@@ -39649,30 +39652,30 @@ const Signup = ({ Setloginstate })=>{
                                             children: "Login"
                                         }, void 0, false, {
                                             fileName: "src/components/Signup.jsx",
-                                            lineNumber: 109,
+                                            lineNumber: 117,
                                             columnNumber: 15
                                         }, undefined)
                                     }, void 0, false, {
                                         fileName: "src/components/Signup.jsx",
-                                        lineNumber: 108,
+                                        lineNumber: 116,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/components/Signup.jsx",
-                                lineNumber: 106,
+                                lineNumber: 114,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/components/Signup.jsx",
-                        lineNumber: 102,
+                        lineNumber: 110,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/components/Signup.jsx",
-                lineNumber: 68,
+                lineNumber: 70,
                 columnNumber: 7
             }, undefined)
         ]
@@ -40104,7 +40107,7 @@ const Header = ()=>{
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: `side-bar fixed inset-y-0 left-0 w-[75%] md:w-[45%]  xl:w-[30%] h-screen bg-white z-50 text-center transform transition-transform duration-500 ease-in-out font-['Basis'] ${sbar ? "translate-x-0" : "-translate-x-full"}`,
+                className: `side-bar fixed inset-y-0 left-0 w-[85%] md:w-[45%]  xl:w-[30%] h-screen bg-white z-50 text-center transform transition-transform duration-500 ease-in-out font-['Basis'] ${sbar ? "translate-x-0" : "-translate-x-full"}`,
                 children: [
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "py-5 w-[95%] mx-auto px-4",
@@ -40156,10 +40159,10 @@ const Header = ()=>{
                         columnNumber: 9
                     }, undefined),
                     users != undefined && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "flex-col  justify-center items-center w-[95%] mx-auto px-4",
+                        className: "flex-col  justify-center items-center w-[95%] mx-auto px-4 max-h-[85%] overflow-y-auto hide-scrollbar",
                         children: users.map((val, index)=>{
                             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "pb-5  text-md md:text-lg ",
+                                className: "pb-5  text-sm md:text-lg ",
                                 children: /*#__PURE__*/ (0, _react.createElement)((0, _usersCardDefault.default), {
                                     ...val,
                                     key: index,
@@ -40316,34 +40319,49 @@ const UsersCard = ({ name, email, _id, setsbar, idx, data })=>{
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
             className: "flex gap-x-3 items-center px-2",
             children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _avatarDefault.default), {
-                    name: name
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "flex-shrink-0",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _avatarDefault.default), {
+                        name: name
+                    }, void 0, false, {
+                        fileName: "src/components/Chat/UsersCard.jsx",
+                        lineNumber: 51,
+                        columnNumber: 11
+                    }, undefined)
                 }, void 0, false, {
                     fileName: "src/components/Chat/UsersCard.jsx",
                     lineNumber: 50,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "flex-col gap-y-2",
+                    className: "flex-col gap-y-2 max-w-[98%] ",
                     children: [
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            style: {
+                                wordBreak: "break-word",
+                                overflowWrap: "break-word"
+                            },
                             children: name
                         }, void 0, false, {
                             fileName: "src/components/Chat/UsersCard.jsx",
-                            lineNumber: 52,
+                            lineNumber: 55,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            style: {
+                                wordBreak: "break-word",
+                                overflowWrap: "break-word"
+                            },
                             children: email
                         }, void 0, false, {
                             fileName: "src/components/Chat/UsersCard.jsx",
-                            lineNumber: 53,
+                            lineNumber: 61,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/components/Chat/UsersCard.jsx",
-                    lineNumber: 51,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, undefined)
             ]
@@ -40646,9 +40664,9 @@ parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _groupchatCard = require("./groupchatCard");
+var _groupchatCard = require("./GroupchatCard");
 var _groupchatCardDefault = parcelHelpers.interopDefault(_groupchatCard);
-var _onetooneCard = require("./onetooneCard");
+var _onetooneCard = require("./OnetooneCard");
 var _onetooneCardDefault = parcelHelpers.interopDefault(_onetooneCard);
 var _userContext = require("../../utils/userContext");
 var _s = $RefreshSig$();
@@ -40693,11 +40711,11 @@ $RefreshReg$(_c, "ChatUserCard");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./groupchatCard":"eKMbX","./onetooneCard":"883j5","../../utils/userContext":"eBA1b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eKMbX":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$99ea = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../utils/userContext":"eBA1b","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./GroupchatCard":"gtab7","./OnetooneCard":"ahKb2"}],"gtab7":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8bf5 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$99ea.prelude(module);
+$parcel$ReactRefreshHelpers$8bf5.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -40716,7 +40734,7 @@ const GroupchatCard = ({ data })=>{
                 className: "text-[1em]",
                 children: name
             }, void 0, false, {
-                fileName: "src/components/Chat/groupchatCard.jsx",
+                fileName: "src/components/Chat/GroupchatCard.jsx",
                 lineNumber: 13,
                 columnNumber: 7
             }, undefined),
@@ -40731,26 +40749,26 @@ const GroupchatCard = ({ data })=>{
                             }, void 0, false)
                         ]
                     }, void 0, true, {
-                        fileName: "src/components/Chat/groupchatCard.jsx",
+                        fileName: "src/components/Chat/GroupchatCard.jsx",
                         lineNumber: 15,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                         children: latestMessage?.content
                     }, void 0, false, {
-                        fileName: "src/components/Chat/groupchatCard.jsx",
+                        fileName: "src/components/Chat/GroupchatCard.jsx",
                         lineNumber: 19,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
-                fileName: "src/components/Chat/groupchatCard.jsx",
+                fileName: "src/components/Chat/GroupchatCard.jsx",
                 lineNumber: 14,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
-        fileName: "src/components/Chat/groupchatCard.jsx",
+        fileName: "src/components/Chat/GroupchatCard.jsx",
         lineNumber: 12,
         columnNumber: 10
     }, undefined);
@@ -40760,16 +40778,16 @@ exports.default = GroupchatCard;
 var _c;
 $RefreshReg$(_c, "GroupchatCard");
 
-  $parcel$ReactRefreshHelpers$99ea.postlude(module);
+  $parcel$ReactRefreshHelpers$8bf5.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"883j5":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$0a01 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"ahKb2":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1c07 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$0a01.prelude(module);
+$parcel$ReactRefreshHelpers$1c07.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -40790,7 +40808,7 @@ const OnetooneCard = ({ data })=>{
                     className: "text-[1em]",
                     children: name
                 }, void 0, false, {
-                    fileName: "src/components/Chat/onetooneCard.jsx",
+                    fileName: "src/components/Chat/OnetooneCard.jsx",
                     lineNumber: 16,
                     columnNumber: 9
                 }, undefined),
@@ -40805,26 +40823,26 @@ const OnetooneCard = ({ data })=>{
                                 }, void 0, false)
                             ]
                         }, void 0, true, {
-                            fileName: "src/components/Chat/onetooneCard.jsx",
+                            fileName: "src/components/Chat/OnetooneCard.jsx",
                             lineNumber: 18,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             children: latestMessage?.content
                         }, void 0, false, {
-                            fileName: "src/components/Chat/onetooneCard.jsx",
+                            fileName: "src/components/Chat/OnetooneCard.jsx",
                             lineNumber: 22,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
-                    fileName: "src/components/Chat/onetooneCard.jsx",
+                    fileName: "src/components/Chat/OnetooneCard.jsx",
                     lineNumber: 17,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
-            fileName: "src/components/Chat/onetooneCard.jsx",
+            fileName: "src/components/Chat/OnetooneCard.jsx",
             lineNumber: 15,
             columnNumber: 12
         }, undefined);
@@ -40835,7 +40853,7 @@ exports.default = OnetooneCard;
 var _c;
 $RefreshReg$(_c, "OnetooneCard");
 
-  $parcel$ReactRefreshHelpers$0a01.postlude(module);
+  $parcel$ReactRefreshHelpers$1c07.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;

@@ -220,7 +220,7 @@ const Header = () => {
 
       {/* Sidebar with animation */}
       <div
-        className={`side-bar fixed inset-y-0 left-0 w-[75%] md:w-[45%]  xl:w-[30%] h-screen bg-white z-50 text-center transform transition-transform duration-500 ease-in-out font-['Basis'] ${
+        className={`side-bar fixed inset-y-0 left-0 w-[85%] md:w-[45%]  xl:w-[30%] h-screen bg-white z-50 text-center transform transition-transform duration-500 ease-in-out font-['Basis'] ${
           sbar ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -246,10 +246,10 @@ const Header = () => {
           </div>
         </div>
         {users != undefined && (
-          <div className="flex-col  justify-center items-center w-[95%] mx-auto px-4">
+          <div className="flex-col  justify-center items-center w-[95%] mx-auto px-4 max-h-[85%] overflow-y-auto hide-scrollbar">
             {users.map((val, index) => {
               return (
-                <div className="pb-5  text-md md:text-lg ">
+                <div className="pb-5  text-sm md:text-lg ">
                   <UsersCard
                     {...val}
                     key={index}

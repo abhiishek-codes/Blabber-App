@@ -80,12 +80,16 @@ const Signup = ({ Setloginstate }) => {
 
   return (
     <div>
-      <h1 className="text-3xl text-center pb-4">Where great minds blabber</h1>
-      <h1 className="text-2xl text-center pb-4">Sign up today.</h1>
+      <h1 className="text-2xl md:text-3xl text-center pb-4">
+        Where great minds blabber
+      </h1>
+      <h1 className="text-xl md:text-2xl text-center pb-4">Sign up today.</h1>
 
       <div className="text-left mx-7">
         <div className="px-1">
-          <label className="block pb-1 px-1 text-[1.1rem]">Name</label>
+          <label className="block pb-1 px-1 text-[0.9rem] md:text-[1.1rem]">
+            Name
+          </label>
           <input
             className="border-2 border-slate-600 rounded-md px-1 w-[100%] h-[2rem]"
             type="text"
@@ -103,7 +107,9 @@ const Signup = ({ Setloginstate }) => {
               )
           )}
 
-          <label className="block pt-4 pb-1 px-1 text-[1.1rem]">Username</label>
+          <label className="block pt-4 pb-1 px-1 text-[0.9rem]  md:text-[1.1rem]">
+            Username
+          </label>
           <input
             className="border-2 border-slate-600 rounded-md px-1 w-[100%] h-[2rem]"
             type="text"
@@ -121,7 +127,9 @@ const Signup = ({ Setloginstate }) => {
               )
           )}
 
-          <label className="block pt-4 pb-1 px-1 text-[1.1rem]">Password</label>
+          <label className="block pt-4 pb-1 px-1 text-[0.9rem] md:text-[1.1rem]">
+            Password
+          </label>
           <div className="relative">
             <input
               className="border-2 border-slate-600 rounded-md px-1 w-[100%] h-[2rem]"
@@ -151,7 +159,7 @@ const Signup = ({ Setloginstate }) => {
               )
           )}
 
-          <label className="block pt-4 pb-2 px-1 text-[1.1rem]">
+          <label className="block pt-4 pb-2 px-1 text-[0.9rem]  md:text-[1.1rem]">
             Upload your profile picture
           </label>
           <input

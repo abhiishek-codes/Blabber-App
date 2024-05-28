@@ -12,8 +12,12 @@ const App = () => {
   return (
     <>
       <UserProvider>
-        <Navbar />
-        <Outlet />
+        <div className="flex flex-col h-screen">
+          <Navbar />
+          <div className="flex-1">
+            <Outlet />
+          </div>
+        </div>
       </UserProvider>
     </>
   );
