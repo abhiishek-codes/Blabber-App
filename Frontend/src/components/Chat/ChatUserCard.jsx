@@ -8,7 +8,6 @@ const ChatUserCard = ({ groupChat, data, idx }) => {
   const {
     searchuserId,
     setsearchuserId,
-    token,
     setAllchats,
     setactiveChat,
     activeChat,

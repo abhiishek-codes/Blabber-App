@@ -40672,7 +40672,7 @@ var _userContext = require("../../utils/userContext");
 var _s = $RefreshSig$();
 const ChatUserCard = ({ groupChat, data, idx })=>{
     _s();
-    const { searchuserId, setsearchuserId, token, setAllchats, setactiveChat, activeChat, chatData, setchatData, isVisible, setisVisible } = (0, _react.useContext)((0, _userContext.userContext));
+    const { searchuserId, setsearchuserId, setAllchats, setactiveChat, activeChat, chatData, setchatData, isVisible, setisVisible } = (0, _react.useContext)((0, _userContext.userContext));
     // console.log(data);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
         onClick: ()=>{
@@ -40685,22 +40685,22 @@ const ChatUserCard = ({ groupChat, data, idx })=>{
             data: data
         }, void 0, false, {
             fileName: "src/components/Chat/ChatUserCard.jsx",
-            lineNumber: 30,
+            lineNumber: 29,
             columnNumber: 28
         }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _onetooneCardDefault.default), {
             data: data
         }, void 0, false, {
             fileName: "src/components/Chat/ChatUserCard.jsx",
-            lineNumber: 30,
+            lineNumber: 29,
             columnNumber: 60
         }, undefined)
     }, void 0, false, {
         fileName: "src/components/Chat/ChatUserCard.jsx",
-        lineNumber: 24,
+        lineNumber: 23,
         columnNumber: 10
     }, undefined);
 };
-_s(ChatUserCard, "vceqeIKTyofKP4haddAAP2PvFqo=");
+_s(ChatUserCard, "MQFp5O0SO/r2kxjpONouWlLCmFU=");
 _c = ChatUserCard;
 exports.default = ChatUserCard;
 var _c;
