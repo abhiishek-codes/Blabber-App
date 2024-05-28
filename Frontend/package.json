@@ -2,10 +2,9 @@
   "name": "frontend",
   "version": "1.0.0",
   "description": "",
-  "main": "App.js",
   "scripts": {
     "start": "parcel ./src/index.html",
-    "build": "parcel ./src/index.html"
+    "build": "parcel build ./src/index.html --dist-dir dist"
   },
   "keywords": [],
   "author": "",
