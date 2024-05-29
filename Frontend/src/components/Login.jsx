@@ -118,7 +118,7 @@ const Login = ({ Setloginstate }) => {
               onClick={() => {
                 setFormData({
                   username: "testuser@gmail.com",
-                  password: "Test@1234",
+                  password: "Test@123",
                 });
               }}
             >
