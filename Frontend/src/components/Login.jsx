@@ -117,8 +117,8 @@ const Login = ({ Setloginstate }) => {
               className="border px-[4rem] py-[0.3rem] rounded-md bg-green-700 text-white hover:bg-slate-800 transition-all duration-300 mb-5"
               onClick={() => {
                 setFormData({
-                  username: "abhi.a.singh.2@gmail.com",
-                  password: "Abhishek",
+                  username: "testuser@gmail.com",
+                  password: "Test@1234",
                 });
               }}
             >

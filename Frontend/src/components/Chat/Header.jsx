@@ -29,6 +29,10 @@ const Header = () => {
   const navigate = useNavigate();
   const [notitrigger, setnotitrigger] = useState(false);
 
+  useEffect(() => {
+    clickHandler();
+  }, []);
+
   const clickHandler = () => {
     const token = userinfo.token;
 
