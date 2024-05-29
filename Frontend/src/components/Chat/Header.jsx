@@ -31,7 +31,7 @@ const Header = () => {
 
   useEffect(() => {
     clickHandler();
-  }, [users]);
+  }, []);
 
   const clickHandler = () => {
     const token = userinfo.token;
@@ -243,6 +243,7 @@ const Header = () => {
               onClick={() => {
                 clickHandler();
                 setusers([]);
+                clickHandler();
               }}
             >
               🔍
